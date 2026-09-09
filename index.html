@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="M. Saqib Bashir is a Senior Full-Stack Developer specializing in PHP, Laravel, CodeIgniter, Node.js, React, Next.js, Vue.js, SaaS, LMS, Online Examination, CRM, workflow platforms, and business automation.">
+    <meta name="keywords" content="M. Saqib Bashir, Muhammad Saqib Bashir, Senior Full-Stack Developer, Software Engineer, PHP, Laravel, CodeIgniter, Node.js, React, Next.js, Vue.js, SaaS, LMS, Online Examination Systems, CRM, Workflow Automation, n8n">
+    <meta name="author" content="Muhammad Saqib Bashir">
 
     <!-- Title -->
-    <title>Noxfolio - Personal Portfolio Resume HTML Template || Home</title>
+    <title>M. Saqib Bashir | Senior Full-Stack Developer | SaaS &amp; Business Solutions</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     
@@ -29,6 +31,156 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom Enhancements for Senior Positioning */
+        .tech-pill {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #e0e0e0;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin: 4px 3px;
+            transition: all 0.3s ease;
+        }
+        .tech-pill:hover {
+            background: var(--primary-color);
+            color: var(--black-color);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        .skill-group-box {
+            background: var(--lighter-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px 22px;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+            height: calc(100% - 24px);
+        }
+        .skill-group-box:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-4px);
+        }
+        .skill-group-box h5 {
+            font-size: 17px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+        .skill-group-box h5 i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .project-card-grid {
+            background: var(--lighter-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px 24px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-card-grid:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+        .project-card-grid .cat-badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--primary-color);
+            background: rgba(245, 178, 51, 0.1);
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+        }
+        .project-card-grid h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .project-card-grid h4 a {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        .project-card-grid h4 a:hover {
+            color: var(--primary-color);
+        }
+        .project-card-grid p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .project-card-grid .project-link-btn {
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        .project-card-grid .project-link-btn i {
+            margin-left: 6px;
+            transition: transform 0.3s ease;
+        }
+        .project-card-grid .project-link-btn:hover {
+            color: #fff;
+        }
+        .project-card-grid .project-link-btn:hover i {
+            transform: translateX(4px);
+        }
+        .pillar-card {
+            background: var(--lighter-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: calc(100% - 30px);
+        }
+        .pillar-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        .pillar-card .icon-wrap {
+            width: 55px;
+            height: 55px;
+            background: rgba(245, 178, 51, 0.12);
+            color: var(--primary-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .pillar-card h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+        .pillar-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body class="home-one">
     <div class="page-wrapper">
@@ -37,14 +189,18 @@
         <div class="preloader"></div>
 
         <!-- main header -->
-        <header class="main-header menu-absolute">
+        <header class="main-header menu-absolute" id="header">
             <!--Header-Upper-->
             <div class="header-upper">
                 <div class="container container-1620 clearfix">
 
                     <div class="header-inner rel d-flex align-items-center">
                         <div class="logo-outer">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo" title="Logo"></a></div>
+                            <div class="logo">
+                                <a href="index.html" class="d-flex align-items-center" style="font-size: 22px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: 'DM Sans', sans-serif;">
+                                    <span style="color: var(--primary-color); margin-right: 6px; font-weight: 800;">&lt;/&gt;</span> Saqib<span style="color: var(--primary-color);">.</span>
+                                </a>
+                            </div>
                         </div>
 
                         <div class="nav-outer clearfix mx-auto">
@@ -52,8 +208,8 @@
                             <nav class="main-menu navbar-expand-lg">
                                 <div class="navbar-header">
                                    <div class="mobile-logo my-15">
-                                       <a href="index.html">
-                                            <img src="assets/images/logos/logo.png" alt="Logo" title="Logo">
+                                       <a href="index.html" style="font-size: 20px; font-weight: 700; color: #ffffff; text-decoration: none;">
+                                           <span style="color: var(--primary-color); font-weight: 800;">&lt;/&gt;</span> Saqib<span style="color: var(--primary-color);">.</span>
                                        </a>
                                    </div>
                                    
@@ -67,40 +223,20 @@
 
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
-                                        <li class="dropdown"><a href="#">Home</a>
+                                        <li class="current"><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li class="dropdown"><a href="projects.html">Projects</a>
                                             <ul>
-                                               <li class="dropdown"><a href="#">MultiPage</a>
-                                                    <ul>
-                                                        <li><a href="index.html">Home One</a></li>
-                                                        <li><a href="index2.html">Home Two</a></li>
-                                                    </ul>
-                                                </li>
-                                               <li class="dropdown"><a href="#">OnePage</a>
-                                                    <ul>
-                                                        <li><a href="indexonepage.html">Home One</a></li>
-                                                        <li><a href="index2onepage.html">Home Two</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="projects.html">Project Grid</a></li>
+                                                <li><a href="projects-masonry.html">Projects Masonry</a></li>
+                                                <li><a href="project-details.html">Project Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="about.html">about</a></li>
-                                        <li><a href="services.html">services</a></li>
-                                        <li class="dropdown"><a href="#">projects</a>
+                                        <li class="dropdown"><a href="blog.html">Blog</a>
                                             <ul>
-                                                <li><a href="projects.html">project Grid</a></li>
-                                                <li><a href="projects-masonry.html">projects masonry</a></li>
-                                                <li><a href="project-details.html">projects details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog standard</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="404.html">Error Page</a></li>
+                                                <li><a href="blog.html">Blog Standard</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -112,10 +248,12 @@
                         </div>
                         
                         <!-- Menu Button -->
-                        <div class="menu-btns">
+                        <div class="menu-btns d-flex align-items-center">
+                            <a href="#contact" class="theme-btn style-two d-none d-lg-inline-block me-3 py-2 px-4" style="font-size: 14px;">Let's Talk <i class="far fa-paper-plane ms-1"></i></a>
+                            
                             <!-- menu sidbar -->
                             <div class="menu-sidebar">
-                                <button>
+                                <button title="Toggle Sidebar">
                                     <img src="assets/images/shape/sidebar-tottler.svg" alt="Toggler">
                                 </button>
                             </div>
@@ -135,33 +273,34 @@
             <div class="inner-box text-center">
                 <div class="cross-icon"><span class="fa fa-times"></span></div>
                 <div class="title">
-                    <h4>Get Appointment</h4>
+                    <h4>Muhammad Saqib Bashir</h4>
+                    <p class="text-white-50 mt-1" style="font-size: 14px;">Senior Full-Stack Developer</p>
                 </div>
 
-                <!--Appointment Form-->
-                <div class="appointment-form">
-                    <form method="post" action="contact.html">
-                        <div class="form-group">
-                            <input type="text" name="text" value="" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Message" rows="5"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="theme-btn">Submit now</button>
-                        </div>
-                    </form>
+                <!--Quick Info-->
+                <div class="sidebar-info text-start px-2 my-4">
+                    <p class="text-white-50 mb-3" style="font-size: 14px; line-height: 1.6;">Specializing in scalable web applications, SaaS products, LMS &amp; Online Examination systems, CRM &amp; business automation platforms.</p>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="far fa-envelope text-primary me-2"></i> <a href="mailto:saqibbashir123@gmail.com" class="text-white-50">saqibbashir123@gmail.com</a>
+                    </div>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="fab fa-github text-primary me-2"></i> <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer" class="text-white-50">github.com/saqibman</a>
+                    </div>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="fab fa-linkedin-in text-primary me-2"></i> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white-50">LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <!--Quick Action-->
+                <div class="mt-4">
+                    <a href="#contact" class="theme-btn w-100 close-menu">Start a Conversation <i class="far fa-arrow-right ms-2"></i></a>
                 </div>
 
                 <!--Social Icons-->
-                <div class="social-style-one">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <div class="social-style-one mt-4">
+                    <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:saqibbashir123@gmail.com" title="Email"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
         </section>
@@ -169,40 +308,43 @@
        
         
         <!-- Hero Section Start -->
-        <section class="main-hero-area pt-150 pb-80 rel z-1">
+        <section class="main-hero-area pt-150 pb-80 rel z-1" id="home">
             <div class="container container-1620">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-sm-7">
                         <div class="hero-content rmb-55 wow fadeInUp delay-0-2s">
-                            <span class="h2">Hello, i’m </span>
-                            <h1><b>Roy C. Jones</b> web designer</h1>
-                            <p>We denounce with righteous indignation dislike demoralized by the charms of pleasure</p>
-                            <div class="hero-btns">
-                                <a href="contact.html" class="theme-btn">Hire Me <i class="far fa-angle-right"></i></a>
-                                <a href="contact.html" class="read-more">Download Resume <i class="far fa-angle-right"></i></a>
+                            <span class="sub-title mb-15">Senior Full-Stack Developer</span>
+                            <h1 style="font-size: 46px; line-height: 1.15; margin-bottom: 20px;">I Build Scalable <b>Web Applications,</b> SaaS Products &amp; Business Platforms</h1>
+                            <p style="font-size: 16px; line-height: 1.6; margin-bottom: 25px;">I’m a Senior Full-Stack Developer specializing in scalable web applications, SaaS products, LMS and Online Examination Systems, CRM &amp; Workflow Platforms, and custom business solutions.</p>
+                            <div class="hero-btns mb-25">
+                                <a href="#contact" class="theme-btn">Let's Work Together <i class="far fa-angle-right"></i></a>
+                                <a href="#projects" class="read-more">View My Projects <i class="far fa-angle-right"></i></a>
+                            </div>
+                            <div class="hero-tech-stack text-white-50 pt-20" style="border-top: 1px solid rgba(255,255,255,0.12); font-size: 13px;">
+                                <span style="color: var(--primary-color); font-weight: 600;"><i class="fas fa-layer-group me-1"></i> Core Stack:</span> PHP • Laravel • CodeIgniter • Node.js • React • Next.js • Vue.js
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-5 order-lg-3">
                         <div class="hero-counter-wrap ms-lg-auto rmb-55 wow fadeInUp delay-0-4s">
-                            <div class="counter-item counter-text-wrap">
-                                <span class="count-text plus" data-speed="3000" data-stop="13">0</span>
-                                <span class="counter-title">Years Of Experience</span>
+                            <div class="counter-item counter-text-wrap mb-30">
+                                <span class="count-text plus" data-speed="3000" data-stop="5">0</span>
+                                <span class="counter-title" style="font-size: 14px; margin-top: 6px; display: block;">Years of Development Experience</span>
+                            </div>
+                            <div class="counter-item counter-text-wrap mb-30">
+                                <span style="font-size: 26px; font-weight: 700; color: #ffffff; display: block; line-height: 1.2;">Full-Stack</span>
+                                <span class="counter-title" style="font-size: 14px; margin-top: 6px; display: block;">Frontend + Backend Development</span>
                             </div>
                             <div class="counter-item counter-text-wrap">
-                                <span class="count-text k-plus" data-speed="3000" data-stop="8">0</span>
-                                <span class="counter-title">Project Complete</span>
-                            </div>
-                            <div class="counter-item counter-text-wrap">
-                                <span class="count-text percent" data-speed="3000" data-stop="99">0</span>
-                                <span class="counter-title">Client Satisfactions</span>
+                                <span style="font-size: 26px; font-weight: 700; color: #ffffff; display: block; line-height: 1.2;">End-to-End</span>
+                                <span class="counter-title" style="font-size: 14px; margin-top: 6px; display: block;">Product Development &amp; Deployment</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="author-image-part wow fadeIn delay-0-3s">
                             <div class="bg-circle"></div>
-                            <img src="assets/images/hero/me.png" alt="Author">
+                            <img src="assets/images/hero/me.jpg" alt="Muhammad Saqib Bashir - Senior Full-Stack Developer">
                             <div class="progress-shape">
                                 <img src="assets/images/hero/progress-shape.png" alt="Progress">
                             </div>
@@ -222,7 +364,7 @@
         
         
         <!-- About Area start -->
-        <section class="about-area rel z-1">
+        <section class="about-area rel z-1" id="about">
             <div class="for-bgc-black py-130 rpy-100">
                 <div class="container">
                     <div class="row gap-100 align-items-center">
@@ -230,44 +372,49 @@
                             <div class="about-content-part rel z-2 rmb-55">
                                 <div class="section-title mb-35 wow fadeInUp delay-0-2s">
                                     <span class="sub-title mb-15">About Me</span>
-                                    <h2>Professional <span>Problem Solutions</span> For Digital Products</h2>
-                                    <p>At vero eos et accusamus etodio dignissimos ducimus praesentium voluptatum corrupti quos dolores quas molestias excepturi sint occaecati cupiditate provident qui officia deserunt mollitia animi, id est laborum et dolorum</p>
+                                    <h2>Professional Software Solutions for <span>Real-World Businesses</span></h2>
+                                    <p>I specialize in turning complex business requirements into scalable, secure, and maintainable software solutions. From custom web applications and SaaS platforms to LMS, online examination, CRM, workflow, and subscription-based systems, I build products designed around real business processes.</p>
                                 </div>
                                 <ul class="list-style-one two-column wow fadeInUp delay-0-2s">
-                                    <li>Branding & Design</li>
-                                    <li>Digital Marketing</li>
-                                    <li>Web Development</li>
-                                    <li>Product Design</li>
+                                    <li>Scalable Web Applications</li>
+                                    <li>SaaS &amp; Multi-Tenant Platforms</li>
+                                    <li>LMS &amp; Online Examination Systems</li>
+                                    <li>CRM &amp; Workflow Solutions</li>
+                                    <li>Custom Business Applications</li>
+                                    <li>Subscription-Based Platforms</li>
                                 </ul>
-                                <div class="about-info-box mt-25 wow fadeInUp delay-0-2s">
+                                <div class="about-info-box mt-35 wow fadeInUp delay-0-2s">
                                     <div class="info-box-item">
                                         <i class="far fa-envelope"></i>
                                         <div class="content">
-                                            <span>Email Us</span><br>
-                                            <a href="mailto:support@gmail.com">support@gmail.com</a>
+                                            <span>Email Me</span><br>
+                                            <a href="mailto:saqibbashir123@gmail.com">saqibbashir123@gmail.com</a>
                                         </div>
                                     </div>
                                     <div class="info-box-item">
-                                        <i class="far fa-phone"></i>
+                                        <i class="fab fa-github"></i>
                                         <div class="content">
-                                            <span>Make A Call</span><br>
-                                            <a href="callto:+000(123)45688">+880 (123) 456 88</a>
+                                            <span>GitHub Profile</span><br>
+                                            <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer">github.com/saqibman</a>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="mt-30 wow fadeInUp delay-0-3s">
+                                    <a href="#services" class="theme-btn">Explore My Services <i class="far fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="about-image-part wow fadeInUp delay-0-3s">
-                                <img src="assets/images/about/about.jpg" alt="About Me">
+                                <img src="assets/images/about/user-sketch.jpg" alt="Muhammad Saqib Bashir - Hand Drawn Sketch">
                                 <div class="about-btn btn-one wow fadeInRight delay-0-4s">
-                                    <img src="assets/images/about/btn-image1.png" alt="Image">
-                                    <h6>Experience Designer</h6>
+                                    <img src="assets/images/about/user-photo.jpg" alt="Photo" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
+                                    <h6>Senior Full-Stack Dev</h6>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                                 <div class="about-btn btn-two wow fadeInRight delay-0-5s">
-                                    <img src="assets/images/about/btn-image2.png" alt="Image">
-                                    <h6>Mark J. Collins</h6>
+                                    <img src="assets/images/about/user-photo.jpg" alt="Photo" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
+                                    <h6>M. Saqib Bashir</h6>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                                 <div class="dot-shape">
@@ -289,8 +436,8 @@
         <!-- About Area end -->
         
         
-        <!-- Resume Area start -->
-        <section class="resume-area pt-130 rpt-100 rel z-1">
+        <!-- Resume / Experience Area start -->
+        <section class="resume-area pt-130 rpt-100 rel z-1" id="experience">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
@@ -300,60 +447,77 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
-                            <div class="col-xl-8 col-lg-9">
+                            <div class="col-xl-11 col-lg-12">
                                 <div class="section-title mb-60 wow fadeInUp delay-0-2s">
-                                    <span class="sub-title mb-15">My Resume</span>
-                                    <h2>Real <span>Problem Solutions</span> Experience</h2>
+                                    <span class="sub-title mb-15">My Professional Journey</span>
+                                    <h2>Real-World <span>Development Experience</span></h2>
+                                    <p class="text-white-50 mt-15" style="font-size: 16px;">Working across different types of web applications and business platforms, with experience in full-stack development, backend systems, APIs, databases, integrations, deployment, and ongoing application improvement.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="resume-items-wrap">
                             <div class="row justify-content-between">
-                                <div class="col-xl-5 col-md-6">
+                                <div class="col-xl-6 col-md-6 mb-4">
                                     <div class="resume-item wow fadeInUp delay-0-3s">
                                         <div class="icon">
                                             <i class="far fa-arrow-right"></i>
                                         </div>
                                         <div class="content">
-                                            <span class="years">2021 - Present</span>
-                                            <h4>Lead Product Designer</h4>
-                                            <span class="company">Google</span>
+                                            <span class="years">2020 – Present</span>
+                                            <h4 style="font-size: 20px;">Senior Full-Stack Developer</h4>
+                                            <span class="company" style="color: var(--primary-color); font-weight: 600;">Intellectual-Works</span>
+                                            <p class="text-white-50 mt-10 mb-10" style="font-size: 14px; line-height: 1.5;">Designing and developing scalable web applications, SaaS platforms, CRM systems, LMS and online examination platforms, subscription-based applications, and custom business solutions.</p>
+                                            <div class="key-areas text-white-50" style="font-size: 12px; line-height: 1.6;">
+                                                <strong class="text-white d-block mb-1">Key Areas:</strong> Full-Stack Development • SaaS Platforms • LMS &amp; Online Exams • CRM &amp; Workflow Systems • API &amp; Database Development • System Architecture
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-5 col-md-6">
+                                <div class="col-xl-6 col-md-6 mb-4">
                                     <div class="resume-item wow fadeInUp delay-0-4s">
                                         <div class="icon">
                                             <i class="far fa-arrow-right"></i>
                                         </div>
                                         <div class="content">
-                                            <span class="years">2016 - 2018</span>
-                                            <h4>Junior UX/UI Designer</h4>
-                                            <span class="company">LinkedIn</span>
+                                            <span class="years">April 2024 – Present</span>
+                                            <h4 style="font-size: 20px;">Backend Developer — Part-Time</h4>
+                                            <span class="company" style="color: var(--primary-color); font-weight: 600;">Friday Media Group</span>
+                                            <p class="text-white-50 mt-10 mb-10" style="font-size: 14px; line-height: 1.5;">Developing and enhancing custom web applications, business platforms, backend systems, APIs, databases, integrations, reporting systems, and workflow solutions.</p>
+                                            <div class="key-areas text-white-50" style="font-size: 12px; line-height: 1.6;">
+                                                <strong class="text-white d-block mb-1">Key Areas:</strong> Backend Development • API Development • Database Management • Business Applications • Third-Party Integrations • Application Optimization
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-5 col-md-6">
+                                <div class="col-xl-6 col-md-6 mb-4">
                                     <div class="resume-item wow fadeInUp delay-0-2s">
                                         <div class="icon">
                                             <i class="far fa-arrow-right"></i>
                                         </div>
                                         <div class="content">
-                                            <span class="years">2018 - 2021</span>
-                                            <h4>Senior Product Designer</h4>
-                                            <span class="company">Webflow</span>
+                                            <span class="years">1 Year</span>
+                                            <h4 style="font-size: 20px;">Frontend Developer</h4>
+                                            <span class="company" style="color: var(--primary-color); font-weight: 600;">Happii Pvt. Ltd.</span>
+                                            <p class="text-white-50 mt-10 mb-10" style="font-size: 14px; line-height: 1.5;">Developed responsive websites and web applications, converted designs into responsive interfaces, and worked with frontend technologies, PHP, databases, and web integrations.</p>
+                                            <div class="key-areas text-white-50" style="font-size: 12px; line-height: 1.6;">
+                                                <strong class="text-white d-block mb-1">Key Areas:</strong> Responsive Interfaces • Web Applications • PHP &amp; Databases • Web Integrations
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-5 col-md-6">
+                                <div class="col-xl-6 col-md-6 mb-4">
                                     <div class="resume-item wow fadeInUp delay-0-4s">
                                         <div class="icon">
                                             <i class="far fa-arrow-right"></i>
                                         </div>
                                         <div class="content">
-                                            <span class="years">2014 - 2016</span>
-                                            <h4>Graphics Designer</h4>
-                                            <span class="company">Apple</span>
+                                            <span class="years">Internship</span>
+                                            <h4 style="font-size: 20px;">Frontend Developer — Internship</h4>
+                                            <span class="company" style="color: var(--primary-color); font-weight: 600;">KICS-UET</span>
+                                            <p class="text-white-50 mt-10 mb-10" style="font-size: 14px; line-height: 1.5;">Worked on responsive web interfaces, website customization, frontend development, and PHP/MySQL-based web applications.</p>
+                                            <div class="key-areas text-white-50" style="font-size: 12px; line-height: 1.6;">
+                                                <strong class="text-white d-block mb-1">Key Areas:</strong> Responsive Web Interfaces • Website Customization • PHP/MySQL Applications
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -370,17 +534,18 @@
                <span></span><span></span>
             </div>
         </section>
-        <!-- Resume Area end -->
+        <!-- Resume / Experience Area end -->
         
         
         <!-- Services Area start -->
-        <section class="services-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+        <section class="services-area pt-130 rpt-100 pb-100 rpb-70 rel z-1" id="services">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
+                    <div class="col-xl-8 col-lg-10">
                         <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                            <span class="sub-title mb-15">Popular Services</span>
-                            <h2>My <span>Special Service</span> For your Business Development</h2>
+                            <span class="sub-title mb-15">What I Do</span>
+                            <h2>My Specialized Services for <span>Business Growth</span></h2>
+                            <p class="text-white-50 mt-15" style="font-size: 16px;">I build custom digital solutions that help businesses manage operations, automate workflows, serve customers, and scale their digital products.</p>
                         </div>
                     </div>
                 </div>
@@ -389,62 +554,65 @@
                         <div class="service-item wow fadeInUp delay-0-2s">
                             <div class="number">01.</div>
                             <div class="content">
-                                <h4>Brand Identity Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <h4>Web Development</h4>
+                                <p>Responsive, scalable, and business-focused websites and web applications built with modern architectural standards.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="service-item wow fadeInUp delay-0-4s">
                             <div class="number">02.</div>
                             <div class="content">
-                                <h4>Website Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <h4>Custom Software Development</h4>
+                                <p>Custom applications designed around specific business requirements, business logic, and operational workflows.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="service-item wow fadeInUp delay-0-2s">
                             <div class="number">03.</div>
                             <div class="content">
-                                <h4>Mobile Application Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <h4>SaaS Development</h4>
+                                <p>Scalable SaaS and multi-tenant platforms with business management, subscription billing, and user management features.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="service-item wow fadeInUp delay-0-4s">
                             <div class="number">04.</div>
                             <div class="content">
-                                <h4>Motion Graphics Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <h4>CRM &amp; Workflow Solutions</h4>
+                                <p>CRM, administrative portals, automated workflows, real-time reporting, and centralized management systems.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="service-item wow fadeInUp delay-0-2s">
                             <div class="number">05.</div>
                             <div class="content">
-                                <h4>Website Development</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <h4>LMS &amp; Online Examination Systems</h4>
+                                <p>Learning management, assessment engines, examination simulators, student and teacher portals, and reporting platforms.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="service-item wow fadeInUp delay-0-4s">
                             <div class="number">06.</div>
                             <div class="content">
-                                <h4>SEO & Digital Marketing</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <h4>API &amp; Automation</h4>
+                                <p>REST APIs, third-party integrations, n8n automated workflows, payment gateways, and business process automation.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
+                </div>
+                <div class="text-center pt-30 wow fadeInUp delay-0-3s">
+                    <a href="#contact" class="theme-btn">Let's Discuss Your Project <i class="far fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
             <div class="bg-lines">
@@ -459,77 +627,101 @@
         
         
         <!-- Skill Area start -->
-        <section class="skill-area rel z-1">
+        <section class="skill-area rel z-1" id="skills">
             <div class="for-bgc-black pt-130 rpt-100 pb-100 rpb-70">
                 <div class="container">
                     <div class="row gap-100">
-                        <div class="col-lg-5">
+                        <div class="col-lg-4">
                             <div class="skill-content-part rel z-2 rmb-55 wow fadeInUp delay-0-2s">
-                                <div class="section-title mb-40">
-                                    <span class="sub-title mb-15">My Skills</span>
-                                    <h2>Let’s Explore Popular <span>Skills & Experience</span></h2>
-                                    <p>Sed ut perspiciatis unde omnis iste natus to voluptatem accusantium doloremque laudantium, totam rem aperiamc eaque ipsa quae ab illo inventore veritatis</p>
+                                <div class="section-title mb-30">
+                                    <span class="sub-title mb-15">Technical Expertise</span>
+                                    <h2>Technologies <span>I Work With</span></h2>
+                                    <p>A full-stack technology stack for building modern, scalable, and maintainable web applications and business platforms.</p>
                                 </div>
-                                <a href="about.html" class="theme-btn">Learn More <i class="far fa-angle-right"></i></a>
+                                <div class="hero-tech-stack mt-20 mb-30 text-white-50" style="font-size: 14px; line-height: 1.8;">
+                                    <i class="fas fa-check-circle text-primary me-2"></i> Clean Architectural Design<br>
+                                    <i class="fas fa-check-circle text-primary me-2"></i> High Performance &amp; Scalability<br>
+                                    <i class="fas fa-check-circle text-primary me-2"></i> Robust Security Practices<br>
+                                    <i class="fas fa-check-circle text-primary me-2"></i> Efficient Database Architecture
+                                </div>
+                                <a href="#contact" class="theme-btn">Discuss Tech Stack <i class="far fa-angle-right"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="skill-items-wrap">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-2s">
-                                            <img src="assets/images/skills/skill1.png" alt="Skill">
-                                            <h5>Figma</h5>
-                                            <span class="percent">95%</span>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <!-- Backend -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="skill-group-box wow fadeInUp delay-0-2s">
+                                        <h5><i class="fas fa-server"></i> Backend Engineering</h5>
+                                        <div class="tech-pills-wrap">
+                                            <span class="tech-pill">PHP</span>
+                                            <span class="tech-pill">Laravel</span>
+                                            <span class="tech-pill">CodeIgniter</span>
+                                            <span class="tech-pill">Node.js</span>
+                                            <span class="tech-pill">REST APIs</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-3s">
-                                            <img src="assets/images/skills/skill2.png" alt="Skill">
-                                            <h5>Framer</h5>
-                                            <span class="percent">83</span>
+                                </div>
+                                <!-- Frontend -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="skill-group-box wow fadeInUp delay-0-3s">
+                                        <h5><i class="fas fa-laptop-code"></i> Frontend Engineering</h5>
+                                        <div class="tech-pills-wrap">
+                                            <span class="tech-pill">React.js</span>
+                                            <span class="tech-pill">Next.js</span>
+                                            <span class="tech-pill">Vue.js</span>
+                                            <span class="tech-pill">JavaScript (ES6+)</span>
+                                            <span class="tech-pill">HTML5</span>
+                                            <span class="tech-pill">CSS3</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-4s">
-                                            <img src="assets/images/skills/skill3.png" alt="Skill">
-                                            <h5>Figma</h5>
-                                            <span class="percent">93%</span>
+                                </div>
+                                <!-- UI & CSS -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="skill-group-box wow fadeInUp delay-0-4s">
+                                        <h5><i class="fas fa-paint-brush"></i> UI &amp; Styling</h5>
+                                        <div class="tech-pills-wrap">
+                                            <span class="tech-pill">Tailwind CSS</span>
+                                            <span class="tech-pill">Bootstrap</span>
+                                            <span class="tech-pill">Responsive Design</span>
+                                            <span class="tech-pill">SASS / SCSS</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-5s">
-                                            <img src="assets/images/skills/skill4.png" alt="Skill">
-                                            <h5>Wordpress</h5>
-                                            <span class="percent">84%</span>
+                                </div>
+                                <!-- Databases -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="skill-group-box wow fadeInUp delay-0-5s">
+                                        <h5><i class="fas fa-database"></i> Databases &amp; Storage</h5>
+                                        <div class="tech-pills-wrap">
+                                            <span class="tech-pill">MySQL</span>
+                                            <span class="tech-pill">MariaDB</span>
+                                            <span class="tech-pill">MongoDB</span>
+                                            <span class="tech-pill">SQLite</span>
+                                            <span class="tech-pill">Supabase</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-2s">
-                                            <img src="assets/images/skills/skill5.png" alt="Skill">
-                                            <h5>Figma</h5>
-                                            <span class="percent">65%</span>
+                                </div>
+                                <!-- CMS Platforms -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="skill-group-box wow fadeInUp delay-0-6s">
+                                        <h5><i class="fas fa-cubes"></i> CMS Platforms</h5>
+                                        <div class="tech-pills-wrap">
+                                            <span class="tech-pill">WordPress</span>
+                                            <span class="tech-pill">Joomla</span>
+                                            <span class="tech-pill">Theme Customization</span>
+                                            <span class="tech-pill">Plugin Development</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-3s">
-                                            <img src="assets/images/skills/skill6.png" alt="Skill">
-                                            <h5>Webflow</h5>
-                                            <span class="percent">86%</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-4s">
-                                            <img src="assets/images/skills/skill7.png" alt="Skill">
-                                            <h5>Figma</h5>
-                                            <span class="percent">62%</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div class="skill-item wow fadeInUp delay-0-5s">
-                                            <img src="assets/images/skills/skill8.png" alt="Skill">
-                                            <h5>Sketch</h5>
-                                            <span class="percent">94%</span>
+                                </div>
+                                <!-- Automation & Integrations -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="skill-group-box wow fadeInUp delay-0-7s">
+                                        <h5><i class="fas fa-cogs"></i> Automation &amp; Workflows</h5>
+                                        <div class="tech-pills-wrap">
+                                            <span class="tech-pill">n8n</span>
+                                            <span class="tech-pill">AI-Powered Automation</span>
+                                            <span class="tech-pill">Workflow Automation</span>
+                                            <span class="tech-pill">Webhooks</span>
                                         </div>
                                     </div>
                                 </div>
@@ -549,79 +741,407 @@
         <!-- Skill Area end -->
         
         
-        <!-- Projects Area start -->
-        <section class="projects-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+                <!-- Projects Area start -->
+        <section class="projects-area pt-130 rpt-100 pb-100 rpb-70 rel z-1" id="projects">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-12">
+                    <div class="col-xl-9 col-lg-11">
                         <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                            <span class="sub-title mb-15">Latest Works</span>
-                            <h2>Explore My Popular <span>Projects</span></h2>
+                            <span class="sub-title mb-15">Selected Portfolio</span>
+                            <h2>Explore My <span>Projects</span></h2>
+                            <p class="text-white-50 mt-15" style="font-size: 16px;">17 live production applications, LMS examination platforms, SaaS portals, and workflow management systems engineered with clean full-stack architectures.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center pb-25">
-                    <div class="col-lg-6">
-                        <div class="project-image wow fadeInLeft delay-0-2s">
-                            <img src="assets/images/projects/project1.jpg" alt="Project">
+
+                <!-- Featured Highlight Projects -->
+                <div class="featured-projects mb-60">
+                    <!-- Project 1: Study4Skills -->
+                    <div class="row align-items-center pb-45">
+                        <div class="col-lg-6">
+                            <div class="project-image wow fadeInLeft delay-0-2s" style="border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #131315;">
+                                <a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/projects/project1.jpg" alt="Study4Skills" style="width: 100%; height: auto; object-fit: cover;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="project-content wow fadeInRight delay-0-2s">
+                                <span class="sub-title" style="color: var(--primary-color);">LMS &amp; Online Examination</span>
+                                <h2><a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer">Study4Skills</a></h2>
+                                <p>Comprehensive online examination &amp; skill assessment ecosystem with timed testing, anti-cheat question banks, and student performance analytics.</p>
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer" class="theme-btn style-two py-2 px-4">Visit Platform <i class="fas fa-external-link-alt ms-1"></i></a>
+                                    <a href="project-details.html" class="theme-btn py-2 px-4">Read Case Study <i class="far fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="project-content wow fadeInRight delay-0-2s">
-                            <span class="sub-title">Product Design</span>
-                            <h2><a href="project-details.html">Mobile Application Design</a></h2>
-                            <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae</p>
-                            <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+
+                    <!-- Project 2: Cloud Lead Engine CRM -->
+                    <div class="row align-items-center pb-45">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="project-image wow fadeInLeft delay-0-2s" style="border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #131315;">
+                                <a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/projects/project2.jpg" alt="Cloud Lead Engine CRM" style="width: 100%; height: auto; object-fit: cover;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 ms-auto">
+                            <div class="project-content wow fadeInRight delay-0-2s">
+                                <span class="sub-title" style="color: var(--primary-color);">CRM &amp; Business Automation</span>
+                                <h2><a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer">Cloud Lead Engine CRM</a></h2>
+                                <p>High-velocity lead acquisition, CRM pipeline management, automated follow-up workflows, and conversion analytics platform.</p>
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer" class="theme-btn style-two py-2 px-4">Visit Platform <i class="fas fa-external-link-alt ms-1"></i></a>
+                                    <a href="projects.html" class="theme-btn py-2 px-4">View in Projects <i class="far fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Direct Dispatcher -->
+                    <div class="row align-items-center pb-25">
+                        <div class="col-lg-6">
+                            <div class="project-image wow fadeInLeft delay-0-2s" style="border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #131315;">
+                                <a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/projects/project3.jpg" alt="Direct Dispatcher" style="width: 100%; height: auto; object-fit: cover;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="project-content wow fadeInRight delay-0-2s">
+                                <span class="sub-title" style="color: var(--primary-color);">Logistics &amp; Dispatcher SaaS</span>
+                                <h2><a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer">Direct Dispatcher</a></h2>
+                                <p>Freight logistics coordination platform with real-time route scheduling, driver management, and automated dispatch workflows.</p>
+                                <div class="d-flex flex-wrap gap-2 mt-3">
+                                    <a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer" class="theme-btn style-two py-2 px-4">Visit Platform <i class="fas fa-external-link-alt ms-1"></i></a>
+                                    <a href="projects.html" class="theme-btn py-2 px-4">View in Projects <i class="far fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center pb-25">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="project-image wow fadeInLeft delay-0-2s">
-                            <img src="assets/images/projects/project2.jpg" alt="Project">
+
+                <!-- Complete 17 Portfolio Links Grid -->
+                <div class="all-projects-header text-center mb-45 wow fadeInUp delay-0-2s">
+                    <span class="sub-title mb-10" style="color: var(--primary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Complete Portfolio Directory</span>
+                    <h3>17 Selected Development Projects</h3>
+                    <p class="text-white-50 mt-10">Click on any project card below to visit the live production website or view the full case studies.</p>
+                </div>
+
+                <div class="row">
+
+                    <!-- 1. Study4Skills -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <span class="cat-badge">LMS & Online Examination</span>
+                                <h4 class="mt-2"><a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer">Study4Skills</a></h4>
+                                <p>Comprehensive online examination & skill assessment ecosystem with timed testing and analytics.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">PHP</span> <span class="tech-pill">Vue.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Redis</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-6 ms-auto">
-                        <div class="project-content wow fadeInRight delay-0-2s">
-                            <span class="sub-title">Product Design</span>
-                            <h2><a href="project-details.html">Website Makeup Design</a></h2>
-                            <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae</p>
-                            <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+
+                    <!-- 2. Qubits Portal -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <span class="cat-badge">LMS & Assessment Portal</span>
+                                <h4 class="mt-2"><a href="https://qubitsportal.com/portal/login" target="_blank" rel="noopener noreferrer">Qubits Portal</a></h4>
+                                <p>Secure institutional examination and student assessment management platform with role-based access control.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://qubitsportal.com/portal/login" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. OET Online Exam -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <span class="cat-badge">Medical Exam System</span>
+                                <h4 class="mt-2"><a href="https://online.oetpro.com/" target="_blank" rel="noopener noreferrer">OET Online Exam</a></h4>
+                                <p>Specialized Occupational English Test mock testing with timed sub-tests, audio integration, and automated scoring.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">Audio API</span> <span class="tech-pill">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://online.oetpro.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. A1/B1 Exam Preparation -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <span class="cat-badge">Language Test Engine</span>
+                                <h4 class="mt-2"><a href="https://a1b1.study4skills.com/" target="_blank" rel="noopener noreferrer">A1/B1 Exam Preparation</a></h4>
+                                <p>Practice exam environment simulating official CEFR A1 & B1 level certification tests with structured modules.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">Vue.js</span> <span class="tech-pill">REST APIs</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://a1b1.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Pearson PTE Practice -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <span class="cat-badge">Computer-Based Testing</span>
+                                <h4 class="mt-2"><a href="https://pearsonpte.study4skills.com/" target="_blank" rel="noopener noreferrer">Pearson PTE Practice</a></h4>
+                                <p>Real-time PTE academic test preparation engine with automated score simulation and section timers.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">React</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">WebSockets</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://pearsonpte.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. OET Reading Practice -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <span class="cat-badge">Interactive Reading Test</span>
+                                <h4 class="mt-2"><a href="https://reading.study4skills.com/" target="_blank" rel="noopener noreferrer">OET Reading Practice</a></h4>
+                                <p>Interactive time-limited reading assessment interface with question bank management and autosave.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://reading.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Fast Track IELTS -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <span class="cat-badge">IELTS Prep Engine</span>
+                                <h4 class="mt-2"><a href="https://fasttrackielts.study4skills.com/" target="_blank" rel="noopener noreferrer">Fast Track IELTS</a></h4>
+                                <p>Dedicated test preparation interface for IELTS Academic and General training with modular practice suites.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">Vue.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://fasttrackielts.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. LanguageCert Practice -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <span class="cat-badge">Exam Simulator</span>
+                                <h4 class="mt-2"><a href="https://languagecert.study4skills.com/" target="_blank" rel="noopener noreferrer">LanguageCert Practice</a></h4>
+                                <p>Interactive LanguageCert exam practice suite with modular question navigation and audio listening.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Audio Player</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://languagecert.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Cloud Lead Engine CRM -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <span class="cat-badge">CRM & Lead Engine</span>
+                                <h4 class="mt-2"><a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer">Cloud Lead Engine CRM</a></h4>
+                                <p>High-velocity lead acquisition, CRM pipeline management, automated follow-up workflows, and conversion analytics.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">Node.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">REST APIs</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. Direct Dispatcher -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <span class="cat-badge">Logistics & Dispatcher SaaS</span>
+                                <h4 class="mt-2"><a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer">Direct Dispatcher</a></h4>
+                                <p>Freight logistics coordination platform with real-time route scheduling, driver management, and dispatch automation.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">PHP</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Google Maps API</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11. Smart Dispatcher -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <span class="cat-badge">Freight Workflow Platform</span>
+                                <h4 class="mt-2"><a href="https://smartdispatcher.us/" target="_blank" rel="noopener noreferrer">Smart Dispatcher</a></h4>
+                                <p>Automated dispatch operations, fleet management dashboard, carrier rate negotiation, and load tracking.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">CodeIgniter</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://smartdispatcher.us/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12. Auto Logistics Pro -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <span class="cat-badge">Transportation Management</span>
+                                <h4 class="mt-2"><a href="https://autologisticspro.com/" target="_blank" rel="noopener noreferrer">Auto Logistics Pro</a></h4>
+                                <p>Vehicle logistics, shipment tracking, automated quote calculation, carrier management, and driver portals.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Stripe API</span> <span class="tech-pill">jQuery</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://autologisticspro.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 13. Logistics Direct Pro -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <span class="cat-badge">Supply Chain System</span>
+                                <h4 class="mt-2"><a href="https://logisticsdirectpro.com/" target="_blank" rel="noopener noreferrer">Logistics Direct Pro</a></h4>
+                                <p>End-to-end supply chain freight booking, load matching, automated invoicing, and dispatcher communication.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">PDF Generator</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://logisticsdirectpro.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 14. Al-Ahad Tech -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <span class="cat-badge">IT Solutions & Corporate</span>
+                                <h4 class="mt-2"><a href="https://alahadtech.com/" target="_blank" rel="noopener noreferrer">Al-Ahad Tech</a></h4>
+                                <p>Enterprise technology services showcase with service portfolios, case studies, client inquiry funnels, and modern UI.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">HTML5</span> <span class="tech-pill">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://alahadtech.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 15. KICS - UET Lahore -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <span class="cat-badge">Research Institute Portal</span>
+                                <h4 class="mt-2"><a href="https://kics.edu.pk/" target="_blank" rel="noopener noreferrer">KICS - UET Lahore</a></h4>
+                                <p>Official digital portal for Al-Khawarizmi Institute of Computer Science (UET Lahore) highlighting research labs.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">WordPress/Custom</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://kics.edu.pk/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 16. Fix My Car -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <span class="cat-badge">On-Demand Service Platform</span>
+                                <h4 class="mt-2"><a href="https://fixmycar.pk/" target="_blank" rel="noopener noreferrer">Fix My Car</a></h4>
+                                <p>Automotive maintenance booking platform with mechanic dispatch, service package catalogs, and review systems.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">SMS Gateway</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://fixmycar.pk/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 17. Care Cleaners -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <span class="cat-badge">Commercial Services Web</span>
+                                <h4 class="mt-2"><a href="https://carecleaners.pk/" target="_blank" rel="noopener noreferrer">Care Cleaners</a></h4>
+                                <p>Service scheduling and customer management platform for residential and commercial cleaning with booking calendar.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px;">Case Study</a>
+                                <a href="https://carecleaners.pk/" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center pb-25">
-                    <div class="col-lg-6">
-                        <div class="project-image wow fadeInLeft delay-0-2s">
-                            <img src="assets/images/projects/project3.jpg" alt="Project">
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="project-content wow fadeInRight delay-0-2s">
-                            <span class="sub-title">Product Design</span>
-                            <h2><a href="project-details.html">Brand Identity and Motion Design</a></h2>
-                            <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae</p>
-                            <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center pb-25">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="project-image wow fadeInLeft delay-0-2s">
-                            <img src="assets/images/projects/project4.jpg" alt="Project">
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6 ms-auto">
-                        <div class="project-content wow fadeInRight delay-0-2s">
-                            <span class="sub-title">Product Design</span>
-                            <h2><a href="project-details.html">Mobile Application Development</a></h2>
-                            <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis architecto beatae</p>
-                            <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-btn text-center wow fadeInUp delay-0-2s">
-                    <a href="projects.html" class="theme-btn">View More Projects <i class="far fa-angle-right"></i></a>
+
+                <div class="project-btn text-center mt-40 wow fadeInUp delay-0-2s">
+                    <a href="projects.html" class="theme-btn me-3">Explore Project Grid <i class="far fa-th-large ms-1"></i></a>
+                    <a href="projects-masonry.html" class="theme-btn style-two">View Masonry Showcase <i class="far fa-th ms-1"></i></a>
                 </div>
             </div>
             <div class="bg-lines">
@@ -635,66 +1155,46 @@
         <!-- Projects Area end -->
         
         
-        <!-- Testimonial Area start -->
+        <!-- Client Experience Section start -->
         <section class="testimonials-area rel z-1">
             <div class="for-bgc-black py-130 rpy-100">
                 <div class="container">
-                    <div class="row gap-90">
-                        <div class="col-lg-4">
-                            <div class="testimonials-content-part rel z-2 rmb-55 wow fadeInUp delay-0-2s">
-                                <div class="section-title mb-40">
-                                    <span class="sub-title mb-15">Clients Testimonials</span>
-                                    <h2>I’ve 1253+ Clients <span>Feedback</span></h2>
-                                    <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis</p>
-                                </div>
-                                <div class="slider-arrows">
-                                    <button class="testimonial-prev"><i class="fal fa-arrow-left"></i></button>
-                                    <button class="testimonial-next"><i class="fal fa-arrow-right"></i></button>
-                                </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9 col-lg-11 text-center">
+                            <div class="section-title mb-60 wow fadeInUp delay-0-2s">
+                                <span class="sub-title mb-15">Client &amp; Project Experience</span>
+                                <h2>Focused on Long-Term, <span>Reliable Solutions</span></h2>
+                                <p class="text-white-50 mt-15" style="font-size: 16px;">I focus on understanding business requirements, delivering maintainable solutions, and continuously improving applications as business needs evolve.</p>
                             </div>
                         </div>
-                        <div class="col-lg-8">
-                            <div class="testimonials-wrap">
-                                <div class="testimonial-item wow fadeInUp delay-0-3s">
-                                    <div class="author">
-                                        <img src="assets/images/testimonials/author1.png" alt="Author">
-                                    </div>
-                                    <div class="text">At vero eoset accusamus et iusto odio dignissimos ducimus quie blanditiis praesentium voluptatum deleniti atque corrupti dolores</div>
-                                    <div class="testi-des">
-                                        <h5>Rodolfo E. Shannon</h5>
-                                        <span>CEO & Founder</span>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item wow fadeInUp delay-0-4s">
-                                    <div class="author">
-                                        <img src="assets/images/testimonials/author2.png" alt="Author">
-                                    </div>
-                                    <div class="text">Nam libero tempore cumsoluta nobise est eligendi optio cumque nihil impedit quominus idquod maxime placeat facere possimus</div>
-                                    <div class="testi-des">
-                                        <h5>Kenneth J. Dutton</h5>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item wow fadeInUp delay-0-2s">
-                                    <div class="author">
-                                        <img src="assets/images/testimonials/author1.png" alt="Author">
-                                    </div>
-                                    <div class="text">At vero eoset accusamus et iusto odio dignissimos ducimus quie blanditiis praesentium voluptatum deleniti atque corrupti dolores</div>
-                                    <div class="testi-des">
-                                        <h5>Rodolfo E. Shannon</h5>
-                                        <span>CEO & Founder</span>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item wow fadeInUp delay-0-2s">
-                                    <div class="author">
-                                        <img src="assets/images/testimonials/author2.png" alt="Author">
-                                    </div>
-                                    <div class="text">Nam libero tempore cumsoluta nobise est eligendi optio cumque nihil impedit quominus idquod maxime placeat facere possimus</div>
-                                    <div class="testi-des">
-                                        <h5>Kenneth J. Dutton</h5>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pillar-card wow fadeInUp delay-0-2s">
+                                <div class="icon-wrap"><i class="fas fa-project-diagram"></i></div>
+                                <h4>Scalable Architecture</h4>
+                                <p>Designing modular, resilient systems capable of handling business growth, traffic surges, and multi-tenant workloads gracefully.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pillar-card wow fadeInUp delay-0-3s">
+                                <div class="icon-wrap"><i class="fas fa-chart-line"></i></div>
+                                <h4>Business-First Focus</h4>
+                                <p>Prioritizing core business goals, automated manual workflows, and reliable technical solutions that deliver measurable results.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pillar-card wow fadeInUp delay-0-4s">
+                                <div class="icon-wrap"><i class="fas fa-shield-alt"></i></div>
+                                <h4>Clean &amp; Secure Code</h4>
+                                <p>Writing clean, well-structured, maintainable code adhering to modern security standards, data integrity, and API protocols.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pillar-card wow fadeInUp delay-0-5s">
+                                <div class="icon-wrap"><i class="fas fa-sync-alt"></i></div>
+                                <h4>Continuous Improvement</h4>
+                                <p>Delivering ongoing enhancements, database optimization, third-party integrations, and proactive technical maintenance.</p>
                             </div>
                         </div>
                     </div>
@@ -708,78 +1208,82 @@
                <span></span><span></span>
             </div>
         </section>
-        <!-- Testimonial Area end -->
+        <!-- Client Experience Section end -->
         
         
-        <!-- Pricing Area start -->
-        <section class="pricing-area pt-130 rpt-100 rel z-1">
+        <!-- Flexible Engagement Area start -->
+        <section class="pricing-area pt-130 rpt-100 rel z-1" id="pricing">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-12">
-                        <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                            <span class="sub-title mb-15">Pricing Package</span>
-                            <h2>Amazing <span>Pricing</span> For your Projects</h2>
+                    <div class="col-xl-9 col-lg-11 text-center">
+                        <div class="section-title mb-60 wow fadeInUp delay-0-2s">
+                            <span class="sub-title mb-15">Flexible Engagement</span>
+                            <h2>Solutions Built Around <span>Your Project</span></h2>
+                            <p class="text-white-50 mt-15" style="font-size: 16px;">Every project has different requirements. I provide flexible development engagements based on project scope, complexity, timeline, and ongoing support requirements.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
+                    <!-- Engagement 1 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="pricing-item wow fadeInUp delay-0-2s">
                             <div class="pricing-header">
-                                <h4 class="title">Basic Plan</h4>
-                                <p class="save-percent">Try Out Basic Plan Save <span>20%</span></p>
-                                <span class="price">19.95</span>
+                                <h4 class="title">Project-Based Development</h4>
+                                <p class="save-percent">Complete End-to-End Delivery</p>
+                                <span class="price" style="font-size: 26px;">Custom Quote</span>
                             </div>
                             <div class="pricing-details">
-                                <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
+                                <p>Ideal for complete websites, web applications, SaaS products, and business platforms.</p>
                                 <ul>
-                                    <li>Website Design</li>
-                                    <li>Mobile Apps Design</li>
-                                    <li>Product Design</li>
-                                    <li class="unable">Digital Marketing</li>
-                                    <li class="unable">Custom Support</li>
+                                    <li>Requirements Analysis</li>
+                                    <li>Full-Stack Development</li>
+                                    <li>API &amp; System Integration</li>
+                                    <li>Database Design &amp; Setup</li>
+                                    <li>Production Deployment</li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">Choose Package <i class="far fa-angle-right"></i></a>
+                                <a href="#contact" class="theme-btn">Discuss Project <i class="far fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
+                    <!-- Engagement 2 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="pricing-item wow fadeInUp delay-0-4s">
                             <div class="pricing-header">
-                                <h4 class="title">Standard Plan</h4>
-                                <p class="save-percent">Try Out Basic Plan Save <span>35%</span></p>
-                                <span class="price">19.95</span>
+                                <h4 class="title">Feature &amp; Module Development</h4>
+                                <p class="save-percent">Scoped Enhancements &amp; Integrations</p>
+                                <span class="price" style="font-size: 26px;">Custom Quote</span>
                             </div>
                             <div class="pricing-details">
-                                <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
+                                <p>Ideal for adding new modules, features, integrations, and workflows to existing applications.</p>
                                 <ul>
-                                    <li>Website Design</li>
-                                    <li>Mobile Apps Design</li>
-                                    <li>Product Design</li>
-                                    <li>Digital Marketing</li>
-                                    <li>Custom Support</li>
+                                    <li>New Features &amp; Modules</li>
+                                    <li>Existing System Enhancement</li>
+                                    <li>Third-Party API Integration</li>
+                                    <li>Bug Fixing &amp; Code Review</li>
+                                    <li>Performance Optimization</li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">Choose Package <i class="far fa-angle-right"></i></a>
+                                <a href="#contact" class="theme-btn">Discuss Scope <i class="far fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
+                    <!-- Engagement 3 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="pricing-item wow fadeInUp delay-0-6s">
                             <div class="pricing-header">
-                                <h4 class="title">Basic Plan</h4>
-                                <p class="save-percent">Try Out Basic Plan Save <span>45%</span></p>
-                                <span class="price">19.95</span>
+                                <h4 class="title">Ongoing Development</h4>
+                                <p class="save-percent">Retainer &amp; Continuous Support</p>
+                                <span class="price" style="font-size: 26px;">Custom Quote</span>
                             </div>
                             <div class="pricing-details">
-                                <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
+                                <p>Ideal for businesses requiring continuous development, maintenance, and technical support.</p>
                                 <ul>
-                                    <li>Website Design</li>
-                                    <li>Mobile Apps Design</li>
-                                    <li>Product Design</li>
-                                    <li>Digital Marketing</li>
-                                    <li>Custom Support</li>
+                                    <li>Scheduled Maintenance</li>
+                                    <li>New Feature Iterations</li>
+                                    <li>Performance Optimization</li>
+                                    <li>Dedicated Technical Support</li>
+                                    <li>Continuous Improvements</li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">Choose Package <i class="far fa-angle-right"></i></a>
+                                <a href="#contact" class="theme-btn">Start Engagement <i class="far fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -793,36 +1297,41 @@
                <span></span><span></span>
             </div>
         </section>
-        <!-- Pricing Area end -->
+        <!-- Flexible Engagement Area end -->
         
         
         <!-- Contact Area start -->
-        <section class="contact-area pt-95 pb-130 rpt-70 rpb-100 rel z-1">
+        <section class="contact-area pt-130 pb-130 rpt-100 rpb-100 rel z-1" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="contact-content-part pt-5 rpt-0 rmb-55 wow fadeInUp delay-0-2s">
                             <div class="section-title mb-40">
-                                <span class="sub-title mb-15">Get In Touch</span>
-                                <h2>Let’s Talk For your <span>Next Projects</span></h2>
-                                <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis</p>
+                                <span class="sub-title mb-15">Have a Project in Mind?</span>
+                                <h2>Let’s Build Your Next <span>Digital Solution</span></h2>
+                                <p>Have an idea, existing application, or business process that needs improvement? Let's discuss your requirements and turn them into a scalable digital solution.</p>
                             </div>
+                            <h5 class="text-white mb-20">What I Can Help With:</h5>
                             <ul class="list-style-two">
-                                <li>5+ Years Of Experience</li>
-                                <li>Professional Web Designer</li>
-                                <li>Mobile Apps Design</li>
-                                <li>Custom Design Support</li>
+                                <li>New Web Application</li>
+                                <li>SaaS Product Development</li>
+                                <li>LMS / Online Exam System</li>
+                                <li>CRM / Workflow Platform</li>
+                                <li>Custom Business Application</li>
+                                <li>API Integration</li>
+                                <li>Business Process Automation</li>
+                                <li>Existing Application Enhancement</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="contact-form contact-form-wrap form-style-one wow fadeInUp delay-0-4s">
-                            <form id="contactForm" class="contactForm" name="contactForm" action="assets/php/form-process.php" method="post">
+                            <form id="contactForm" class="contactForm" name="contactForm" action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="name">Full Name</label>
-                                            <input type="text" id="name" name="name" class="form-control" value="" placeholder="Richard D. Hammond" required data-error="Please enter your Name">
+                                            <label for="name">Your Name</label>
+                                            <input type="text" id="name" name="name" class="form-control" value="" placeholder="e.g. John Doe" required data-error="Please enter your Name">
                                             <label for="name" class="for-icon"><i class="far fa-user"></i></label>
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -830,37 +1339,46 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="email">Email Address</label>
-                                            <input type="email" id="email" name="email" class="form-control" value="" placeholder="support@gmail.com" required data-error="Please enter your Email">
+                                            <input type="email" id="email" name="email" class="form-control" value="" placeholder="e.g. john@business.com" required data-error="Please enter your Email">
                                             <label for="email" class="for-icon"><i class="far fa-envelope"></i></label>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="phone_number">Phone Number</label>
-                                            <input type="text" id="phone_number" name="phone_number" class="form-control" value="" placeholder="+880 (123) 456 88" required data-error="Please enter your Phone Number">
-                                            <label for="phone_number" class="for-icon"><i class="far fa-phone"></i></label>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="project_type">Project Type</label>
+                                            <select name="project_type" id="project_type" class="form-control" style="background: #17171a; color: #fff; border-color: rgba(255,255,255,0.1);">
+                                                <option value="Web Application">Web Application</option>
+                                                <option value="SaaS Platform">SaaS Platform</option>
+                                                <option value="LMS">LMS</option>
+                                                <option value="Online Examination System">Online Examination System</option>
+                                                <option value="CRM / Workflow">CRM / Workflow</option>
+                                                <option value="E-Commerce">E-Commerce</option>
+                                                <option value="Business Website">Business Website</option>
+                                                <option value="API / Integration">API / Integration</option>
+                                                <option value="Automation">Automation</option>
+                                                <option value="Existing Application Enhancement">Existing Application Enhancement</option>
+                                                <option value="Other">Other</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="subject">Subject</label>
-                                            <input type="text" id="subject" name="subject" class="form-control" value="" placeholder="Subject" required data-error="Please enter your Subject">
-                                            <label for="subject" class="for-icon"><i class="far fa-text"></i></label>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="budget">Budget / Engagement Type</label>
+                                            <input type="text" id="budget" name="budget" class="form-control" value="" placeholder="e.g. Fixed Project / Retainer / Custom">
+                                            <label for="budget" class="for-icon"><i class="far fa-dollar-sign"></i></label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="message">Message</label>
-                                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="write message" required data-error="Please enter your Message"></textarea>
+                                            <label for="message">Your Message / Requirements</label>
+                                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Describe your project, goals, requirements, or timeline..." required data-error="Please enter your Message"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group mb-0">
-                                            <button type="submit" class="theme-btn">Send Us Message <i class="far fa-angle-right"></i></button>
+                                            <button type="submit" class="theme-btn">Let's Talk <i class="far fa-paper-plane ms-1"></i></button>
                                             <div id="msgSubmit" class="hidden"></div>
                                         </div>
                                     </div>
@@ -881,180 +1399,66 @@
         <!-- Contact Area end -->
         
         
-        <!-- Blog Area start -->
-        <section class="blog-area rel z-1">
-            <div class="for-bgc-black pt-130 pb-100 rpt-100 rpb-70">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-12">
-                            <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                                <span class="sub-title mb-15">News & Blog</span>
-                                <h2>Latest News & <span>Blog</span></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="blog-item wow fadeInUp delay-0-2s">
-                                <div class="image">
-                                    <img src="assets/images/blog/blog1.png" alt="Blog">
-                                </div>
-                                <div class="content">
-                                    <div class="blog-meta mb-35">
-                                        <a class="tag" href="blog.html">Design</a>
-                                        <a class="tag" href="blog.html">Figma</a>
-                                    </div>
-                                    <h5><a href="blog-details.html">Tips For Conductin See Usability Studies</a></h5>
-                                    <hr>
-                                    <div class="blog-meta mt-35">
-                                        <a class="date" href="#"><i class="far fa-calendar-alt"></i> September 25, 2023</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="blog-item wow fadeInUp delay-0-2s">
-                                <div class="image">
-                                    <img src="assets/images/blog/blog2.png" alt="Blog">
-                                </div>
-                                <div class="content">
-                                    <div class="blog-meta mb-35">
-                                        <a class="tag" href="blog.html">Design</a>
-                                        <a class="tag" href="blog.html">Figma</a>
-                                    </div>
-                                    <h5><a href="blog-details.html">Keyboard-Only Suppor Assistive Technology</a></h5>
-                                    <hr>
-                                    <div class="blog-meta mt-35">
-                                        <a class="date" href="#"><i class="far fa-calendar-alt"></i> September 25, 2023</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-lines">
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-            </div>
-        </section>
-        <!-- Blog Area end -->
-        
-        <!-- Client Log start -->
-        <div class="client-logo-area rel z-1 pt-130 rpt-100 pb-60">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-12">
-                        <div class="section-title text-center pt-5 mb-65 wow fadeInUp delay-0-2s">
-                            <h6>I’ve <span>1253+ Global Clients</span> & lot’s of Project Complete</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="client-logo-wrap">
-                    <a class="client-logo-item wow fadeInUp delay-0-2s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo1.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-3s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo2.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-4s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo3.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-5s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo4.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-6s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo5.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-2s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo6.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-3s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo7.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-4s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo8.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-5s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo9.png" alt="Client Logo">
-                    </a>
-                    <a class="client-logo-item wow fadeInUp delay-0-6s" href="contact.html">
-                        <img src="assets/images/client-logos/client-logo10.png" alt="Client Logo">
-                    </a>
-                </div>
-            </div>
-            <div class="bg-lines">
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-            </div>
-        </div>
-        <!-- Client Log end -->
-        
-        
         <!-- footer area start -->
         <footer class="main-footer rel z-1">
             <div class="footer-top-wrap bgc-black pt-100 pb-75">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2 col-md-12">
-                            <div class="footer-widget widget_logo wow fadeInUp delay-0-2s">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo"></a>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget widget_about wow fadeInUp delay-0-2s mb-4">
+                                <div class="footer-logo mb-20">
+                                    <a href="index.html" class="d-flex align-items-center" style="font-size: 24px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: 'DM Sans', sans-serif;">
+                                        <span style="color: var(--primary-color); margin-right: 6px; font-weight: 800;">&lt;/&gt;</span> M. Saqib Bashir
+                                    </a>
+                                </div>
+                                <h6 class="text-white mb-10" style="font-size: 15px;">Senior Full-Stack Developer</h6>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; max-width: 340px;">Building scalable web applications, SaaS products, business platforms, and automation solutions.</p>
+                                <div class="tech-stack-line mt-15 text-white-50" style="font-size: 12px;">
+                                    PHP | Laravel | CodeIgniter | Node.js | React | Next.js | Vue.js | MySQL | MongoDB | Supabase | n8n
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-7">
-                            <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
-                                <h6 class="footer-title">Quick Link</h6>
-                                <ul>
-                                    <li><a href="services.html">Service</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="services.html#pricing">Pricing</a></li>
-                                    <li><a href="about.html#faqs">Faqs</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                        <div class="col-lg-5 col-md-7">
+                            <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s mb-4">
+                                <h6 class="footer-title">Navigation Links</h6>
+                                <ul class="footer-links-inline d-flex flex-wrap" style="list-style: none; padding: 0;">
+                                    <li class="me-3 mb-2"><a href="index.html">Home</a></li>
+                                    <li class="me-3 mb-2"><a href="about.html">About</a></li>
+                                    <li class="me-3 mb-2"><a href="services.html">Services</a></li>
+                                    <li class="me-3 mb-2"><a href="projects.html">Projects</a></li>
+                                    <li class="me-3 mb-2"><a href="projects-masonry.html">Masonry</a></li>
+                                    <li class="me-3 mb-2"><a href="project-details.html">Case Study</a></li>
+                                    <li class="me-3 mb-2"><a href="blog.html">Blog</a></li>
+                                    <li class="me-3 mb-2"><a href="contact.html">Contact</a></li>
                                 </ul>
-                            </div>
-                            <div class="footer-widget widget_newsletter wow fadeInUp delay-0-4s">
-                                <form action="#">
-                                    <label for="email-address"><i class="far fa-envelope"></i></label>
-                                    <input id="email-address" type="email" placeholder="Email Address" required>
-                                    <button>Sign Up <i class="far fa-angle-right"></i></button>
-                                </form>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-5">
-                            <div class="footer-widget widget_contact_info wow fadeInUp delay-0-6s">
-                                <h6 class="footer-title">Address</h6>
+                            <div class="footer-widget widget_contact_info wow fadeInUp delay-0-6s mb-4">
+                                <h6 class="footer-title">Direct Connect</h6>
                                 <ul>
-                                    <li><i class="far fa-map-marker-alt"></i> 55 Main Street, 2nd block, New York City</li>
-                                    <li><i class="far fa-envelope"></i> <a href="mailto:support@gmail.com">support@gmail.com</a></li>
-                                    <li><i class="far fa-phone"></i> <a href="callto:+880(123)45688">+880 (123) 456 88</a></li>
+                                    <li><i class="far fa-envelope text-primary"></i> <a href="mailto:saqibbashir123@gmail.com">saqibbashir123@gmail.com</a></li>
+                                    <li><i class="fab fa-github text-primary"></i> <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer">github.com/saqibman</a></li>
+                                    <li><i class="fab fa-linkedin-in text-primary"></i> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom pt-20 pb-5 rpt-25">
+            <div class="footer-bottom pt-20 pb-15 rpt-25">
                 <div class="container">
-                   <div class="row">
+                   <div class="row align-items-center">
                        <div class="col-lg-6">
                             <div class="copyright-text">
-                                <p>Copyright @2023, <a href="index.html">Noxfolio</a> All Rights Reserved</p>
+                                <p>Copyright @2026, <a href="index.html">Muhammad Saqib Bashir</a>. All Rights Reserved.</p>
                             </div>
                        </div>
                        <div class="col-lg-6 text-lg-end">
                            <ul class="footer-bottom-nav">
-                               <li><a href="#">Facebook</a></li>
-                               <li><a href="#">Twitter</a></li>
-                               <li><a href="#">Instagram</a></li>
-                               <li><a href="#">LinkedIn</a></li>
+                               <li><a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-1"></i> GitHub</a></li>
+                               <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in me-1"></i> LinkedIn</a></li>
+                               <li><a href="mailto:saqibbashir123@gmail.com"><i class="far fa-envelope me-1"></i> Email</a></li>
                            </ul>
                        </div>
                    </div>

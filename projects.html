@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Explore 17 live production web applications, SaaS portals, LMS examination systems, and CRM solutions built by Muhammad Saqib Bashir.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Noxfolio - Personal Portfolio Resume HTML Template || Projects Grid</title>
+    <title>Featured Projects &amp; Portfolio || Muhammad Saqib Bashir - Senior Full-Stack Developer</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     
@@ -27,6 +27,77 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     
+    <style>
+        .tech-pill {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #e0e0e0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 3px 2px;
+            transition: all 0.3s ease;
+        }
+        .tech-pill:hover {
+            background: var(--primary-color);
+            color: var(--black-color);
+            border-color: var(--primary-color);
+        }
+        .project-card-grid {
+            background: var(--lighter-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px 24px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-card-grid:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+        .project-card-grid .cat-badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--primary-color);
+            background: rgba(245, 178, 51, 0.1);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+        .project-card-grid h4 a:hover {
+            color: var(--primary-color) !important;
+        }
+        .project-card-grid .project-link-btn {
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        .project-card-grid .project-link-btn i {
+            margin-left: 6px;
+            transition: transform 0.3s ease;
+        }
+        .project-card-grid .project-link-btn:hover {
+            color: #fff;
+        }
+        .project-card-grid .project-link-btn:hover i {
+            transform: translateX(4px);
+        }
+        .project-filter li {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 <body class="home-one">
     <div class="page-wrapper">
@@ -35,14 +106,18 @@
         <div class="preloader"></div>
 
         <!-- main header -->
-        <header class="main-header menu-absolute">
+        <header class="main-header menu-absolute" id="header">
             <!--Header-Upper-->
             <div class="header-upper">
                 <div class="container container-1620 clearfix">
 
                     <div class="header-inner rel d-flex align-items-center">
                         <div class="logo-outer">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo" title="Logo"></a></div>
+                            <div class="logo">
+                                <a href="index.html" class="d-flex align-items-center" style="font-size: 22px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: 'DM Sans', sans-serif;">
+                                    <span style="color: var(--primary-color); margin-right: 6px; font-weight: 800;">&lt;/&gt;</span> Saqib<span style="color: var(--primary-color);">.</span>
+                                </a>
+                            </div>
                         </div>
 
                         <div class="nav-outer clearfix mx-auto">
@@ -50,8 +125,8 @@
                             <nav class="main-menu navbar-expand-lg">
                                 <div class="navbar-header">
                                    <div class="mobile-logo my-15">
-                                       <a href="index.html">
-                                            <img src="assets/images/logos/logo.png" alt="Logo" title="Logo">
+                                       <a href="index.html" style="font-size: 20px; font-weight: 700; color: #ffffff; text-decoration: none;">
+                                           <span style="color: var(--primary-color); font-weight: 800;">&lt;/&gt;</span> Saqib<span style="color: var(--primary-color);">.</span>
                                        </a>
                                    </div>
                                    
@@ -65,40 +140,20 @@
 
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
-                                        <li class="dropdown"><a href="#">Home</a>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li class="dropdown current"><a href="projects.html">Projects</a>
                                             <ul>
-                                               <li class="dropdown"><a href="#">MultiPage</a>
-                                                    <ul>
-                                                        <li><a href="index.html">Home One</a></li>
-                                                        <li><a href="index2.html">Home Two</a></li>
-                                                    </ul>
-                                                </li>
-                                               <li class="dropdown"><a href="#">OnePage</a>
-                                                    <ul>
-                                                        <li><a href="indexonepage.html">Home One</a></li>
-                                                        <li><a href="index2onepage.html">Home Two</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li class="current"><a href="projects.html">Project Grid</a></li>
+                                                <li><a href="projects-masonry.html">Projects Masonry</a></li>
+                                                <li><a href="project-details.html">Project Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="about.html">about</a></li>
-                                        <li><a href="services.html">services</a></li>
-                                        <li class="dropdown"><a href="#">projects</a>
+                                        <li class="dropdown"><a href="blog.html">Blog</a>
                                             <ul>
-                                                <li><a href="projects.html">project Grid</a></li>
-                                                <li><a href="projects-masonry.html">projects masonry</a></li>
-                                                <li><a href="project-details.html">projects details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog standard</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="404.html">Error Page</a></li>
+                                                <li><a href="blog.html">Blog Standard</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -110,10 +165,12 @@
                         </div>
                         
                         <!-- Menu Button -->
-                        <div class="menu-btns">
+                        <div class="menu-btns d-flex align-items-center">
+                            <a href="contact.html" class="theme-btn style-two d-none d-lg-inline-block me-3 py-2 px-4" style="font-size: 14px;">Let's Talk <i class="far fa-paper-plane ms-1"></i></a>
+                            
                             <!-- menu sidbar -->
                             <div class="menu-sidebar">
-                                <button>
+                                <button title="Toggle Sidebar">
                                     <img src="assets/images/shape/sidebar-tottler.svg" alt="Toggler">
                                 </button>
                             </div>
@@ -133,33 +190,47 @@
             <div class="inner-box text-center">
                 <div class="cross-icon"><span class="fa fa-times"></span></div>
                 <div class="title">
-                    <h4>Get Appointment</h4>
+                    <h4>Muhammad Saqib Bashir</h4>
+                    <p class="text-white-50 mt-1" style="font-size: 14px;">Senior Full-Stack Developer</p>
                 </div>
 
-                <!--Appointment Form-->
+                <!--Quick Info-->
+                <div class="sidebar-info text-start px-2 my-4">
+                    <p class="text-white-50 mb-3" style="font-size: 14px; line-height: 1.6;">Specializing in scalable web applications, SaaS products, LMS &amp; Online Examination systems, CRM &amp; business automation platforms.</p>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="far fa-envelope text-primary me-2"></i> <a href="mailto:saqibbashir123@gmail.com" class="text-white-50">saqibbashir123@gmail.com</a>
+                    </div>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="fab fa-github text-primary me-2"></i> <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer" class="text-white-50">github.com/saqibman</a>
+                    </div>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="fab fa-linkedin-in text-primary me-2"></i> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white-50">LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <!--Quick Form-->
                 <div class="appointment-form">
                     <form method="post" action="contact.html">
                         <div class="form-group">
-                            <input type="text" name="text" value="" placeholder="Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Email Address" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Message" rows="5"></textarea>
+                            <textarea placeholder="Tell me about your project..." rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="theme-btn">Submit now</button>
+                            <button type="submit" class="theme-btn w-100">Send Inquiry</button>
                         </div>
                     </form>
                 </div>
 
                 <!--Social Icons-->
-                <div class="social-style-one">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <div class="social-style-one mt-20">
+                    <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:saqibbashir123@gmail.com"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
         </section>
@@ -170,11 +241,11 @@
         <section class="page-banner-area pt-200 rpt-140 pb-100 rpb-60 rel z-1 text-center">
             <div class="container">
                 <div class="banner-inner text-white">
-                    <h1 class="page-title wow fadeInUp delay-0-2s">Project Grid View</h1>
+                    <h1 class="page-title wow fadeInUp delay-0-2s">Featured Projects</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Project Grid View</li>
+                            <li class="breadcrumb-item active">Project Grid</li>
                         </ol>
                     </nav>
                 </div>
@@ -193,91 +264,437 @@
         <!-- Projects Area start -->
         <section class="projects-area pt-40 pb-130 rpb-100 rel z-1">
             <div class="container">
-               <ul class="project-filter filter-btns-one justify-content-center pb-35 wow fadeInUp delay-0-2s">
-                    <li data-filter="*" class="current">Show All</li>
-                    <li data-filter=".design">Design</li>
-                    <li data-filter=".branding">Branding</li>
-                    <li data-filter=".marketing">Marketing</li>
-                    <li data-filter=".development">Development</li>
-                    <li data-filter=".apps">Mobile Apps</li>
-                    <li data-filter=".graphics">Graphics</li>
+                <div class="row justify-content-center mb-20">
+                    <div class="col-xl-8 text-center">
+                        <div class="section-title mb-30 wow fadeInUp delay-0-2s">
+                            <span class="sub-title mb-15">Production Work</span>
+                            <h2>17 Live Systems <span>Engineered &amp; Deployed</span></h2>
+                            <p class="text-white-50">Filter through live production applications, LMS portals, SaaS systems, and business platforms built with cutting-edge full-stack technologies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="project-filter filter-btns-one justify-content-center pb-35 wow fadeInUp delay-0-2s">
+                    <li data-filter="*" class="current">Show All (17)</li>
+                    <li data-filter=".lms">LMS &amp; Exams (8)</li>
+                    <li data-filter=".saas">SaaS &amp; CRM (5)</li>
+                    <li data-filter=".web">Web Platforms (4)</li>
                 </ul>
+
                 <div class="row project-masonry-active">
-                    <div class="col-lg-6 item branding development">
-                        <div class="project-item style-two wow fadeInUp delay-0-2s">
-                            <div class="project-image">
-                                <img src="assets/images/projects/project1.jpg" alt="Project">
-                                <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">LMS & Online Examination</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#01</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Study4Skills</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Comprehensive online examination & skill assessment ecosystem with timed testing, anti-cheat question banks, and student performance analytics.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">PHP</span> <span class="tech-pill">Vue.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Redis</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <span class="sub-title">Product Design</span>
-                                <h3><a href="project-details.html">Mobile Application Design</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 item design marketing graphics">
-                        <div class="project-item style-two wow fadeInUp delay-0-4s">
-                            <div class="project-image">
-                                <img src="assets/images/projects/project2.jpg" alt="Project">
-                                <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="project-content">
-                                <span class="sub-title">Product Design</span>
-                                <h3><a href="project-details.html">Website Makeup Design</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 item development graphics">
-                        <div class="project-item style-two wow fadeInUp delay-0-2s">
-                            <div class="project-image">
-                                <img src="assets/images/projects/project3.jpg" alt="Project">
-                                <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="project-content">
-                                <span class="sub-title">Graphics Design</span>
-                                <h3><a href="project-details.html">Brand Identity and Motion Design</a></h3>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 item design development apps">
-                        <div class="project-item style-two wow fadeInUp delay-0-4s">
-                            <div class="project-image">
-                                <img src="assets/images/projects/project4.jpg" alt="Project">
-                                <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">LMS & Assessment Portal</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#02</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://qubitsportal.com/portal/login" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Qubits Portal</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Secure institutional examination and student assessment management platform with role-based access control and live reporting.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <span class="sub-title">Product Design</span>
-                                <h3><a href="project-details.html">Mobile Application Design</a></h3>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://qubitsportal.com/portal/login" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 item branding marketing graphics">
-                        <div class="project-item style-two wow fadeInUp delay-0-2s">
-                            <div class="project-image">
-                                <img src="assets/images/projects/project5.jpg" alt="Project">
-                                <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Medical Exam System</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#03</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://online.oetpro.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">OET Online Exam</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Specialized Occupational English Test mock testing with timed sub-tests, audio integration, and automatic scoring modules.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">Audio API</span> <span class="tech-pill">MySQL</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <span class="sub-title">Design & Branding</span>
-                                <h3><a href="project-details.html">Creative Graphics Design</a></h3>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://online.oetpro.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 item design marketing apps">
-                        <div class="project-item style-two wow fadeInUp delay-0-4s">
-                            <div class="project-image">
-                                <img src="assets/images/projects/project6.jpg" alt="Project">
-                                <a href="project-details.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-8s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Language Test Engine</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#04</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://a1b1.study4skills.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">A1/B1 Exam Preparation</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Practice exam environment simulating official CEFR A1 & B1 level certification tests with structured speaking/listening modules.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">Vue.js</span> <span class="tech-pill">REST APIs</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <span class="sub-title">Product Design</span>
-                                <h3><a href="project-details.html">Design & Branding Mokeup</a></h3>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://a1b1.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Computer-Based Testing</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#05</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://pearsonpte.study4skills.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Pearson PTE Practice</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Real-time PTE academic test preparation engine with automated score simulation, section timers, and performance dashboards.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">React</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">WebSockets</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://pearsonpte.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Interactive Reading Test</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#06</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://reading.study4skills.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">OET Reading Practice</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Interactive time-limited reading assessment interface with question bank management, autosave, and detailed test reviews.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://reading.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">IELTS Prep Engine</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#07</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://fasttrackielts.study4skills.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Fast Track IELTS</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Dedicated test preparation interface for IELTS Academic and General training with modular practice suites and mock exams.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">Vue.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://fasttrackielts.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item lms">
+                        <div class="project-card-grid wow fadeInUp delay-0-8s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Exam Simulator</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#08</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://languagecert.study4skills.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">LanguageCert Practice</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Interactive LanguageCert exam practice suite with modular question navigation, audio listening questions, and score tracking.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Audio Player</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://languagecert.study4skills.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item saas">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">CRM & Lead Engine</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#09</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Cloud Lead Engine CRM</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">High-velocity lead acquisition, CRM pipeline management, automated follow-up workflows, and conversion analytics platform.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">Node.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">REST APIs</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item saas">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Logistics & Dispatcher SaaS</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#10</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Direct Dispatcher</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Freight logistics coordination platform with real-time route scheduling, driver management, and automated dispatch workflows.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">PHP</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Google Maps API</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item saas">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Freight Workflow Platform</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#11</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://smartdispatcher.us/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Smart Dispatcher</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Automated dispatch operations, fleet management dashboard, carrier rate negotiation, and load tracking engine.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">CodeIgniter</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://smartdispatcher.us/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item saas">
+                        <div class="project-card-grid wow fadeInUp delay-0-8s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Transportation Management</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#12</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://autologisticspro.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Auto Logistics Pro</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Vehicle logistics, shipment tracking, automated quote calculation, carrier management, and driver mobile web portals.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Stripe API</span> <span class="tech-pill">jQuery</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://autologisticspro.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item saas">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Supply Chain System</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#13</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://logisticsdirectpro.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Logistics Direct Pro</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">End-to-end supply chain freight booking, load matching, automated invoicing, and real-time dispatcher communication.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">PDF Generator</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://logisticsdirectpro.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item web">
+                        <div class="project-card-grid wow fadeInUp delay-0-4s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">IT Solutions & Corporate</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#14</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://alahadtech.com/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Al-Ahad Tech</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Enterprise technology services showcase with service portfolios, case studies, client inquiry funnels, and modern responsive UI.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">HTML5</span> <span class="tech-pill">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://alahadtech.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item web">
+                        <div class="project-card-grid wow fadeInUp delay-0-6s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Research Institute Portal</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#15</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://kics.edu.pk/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">KICS - UET Lahore</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Official digital portal for Al-Khawarizmi Institute of Computer Science (UET Lahore) highlighting research labs and conferences.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">WordPress/Custom</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://kics.edu.pk/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item web">
+                        <div class="project-card-grid wow fadeInUp delay-0-8s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">On-Demand Service Platform</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#16</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://fixmycar.pk/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Fix My Car</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Automotive maintenance booking platform with mechanic dispatch, service package catalogs, and customer review systems.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">SMS Gateway</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://fixmycar.pk/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item web">
+                        <div class="project-card-grid wow fadeInUp delay-0-2s">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="cat-badge">Commercial Services Web</span>
+                                    <span class="text-white-50" style="font-size: 13px; font-weight: 600;">#17</span>
+                                </div>
+                                <h4 class="mb-2"><a href="https://carecleaners.pk/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">Care Cleaners</a></h4>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; margin-bottom: 18px;">Service scheduling and customer management platform for residential and commercial cleaning with booking calendar.</p>
+                                <div class="mb-3">
+                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-3 mt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <a href="https://carecleaners.pk/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    Visit Live Site <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="project-details.html" class="text-white-50" style="font-size: 13px; text-decoration: none;" title="View Case Study">
+                                    Case Study <i class="fas fa-arrow-right text-primary ms-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-btn text-center wow fadeInUp delay-0-2s">
-                    <a href="projects.html" class="theme-btn">View More Projects <i class="far fa-angle-right"></i></a>
+
+                <div class="project-btn text-center mt-40 wow fadeInUp delay-0-2s">
+                    <a href="projects-masonry.html" class="theme-btn me-3">View Masonry Layout <i class="far fa-th-large ms-1"></i></a>
+                    <a href="contact.html" class="theme-btn style-two">Discuss a Project <i class="far fa-paper-plane ms-1"></i></a>
                 </div>
             </div>
             <div class="bg-lines">
@@ -296,59 +713,61 @@
             <div class="footer-top-wrap bgc-black pt-100 pb-75">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2 col-md-12">
-                            <div class="footer-widget widget_logo wow fadeInUp delay-0-2s">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo"></a>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget widget_about wow fadeInUp delay-0-2s mb-4">
+                                <div class="footer-logo mb-20">
+                                    <a href="index.html" class="d-flex align-items-center" style="font-size: 24px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: 'DM Sans', sans-serif;">
+                                        <span style="color: var(--primary-color); margin-right: 6px; font-weight: 800;">&lt;/&gt;</span> M. Saqib Bashir
+                                    </a>
+                                </div>
+                                <h6 class="text-white mb-10" style="font-size: 15px;">Senior Full-Stack Developer</h6>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; max-width: 340px;">Building scalable web applications, SaaS products, business platforms, and automation solutions with clean code and high performance.</p>
+                                <div class="tech-stack-line mt-15 text-white-50" style="font-size: 12px;">
+                                    PHP | Laravel | CodeIgniter | Node.js | React | Next.js | Vue.js | MySQL | MongoDB | Supabase | n8n
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-7">
-                            <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
-                                <h6 class="footer-title">Quick Link</h6>
-                                <ul>
-                                    <li><a href="services.html">Service</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="services.html#pricing">Pricing</a></li>
-                                    <li><a href="about.html#faqs">Faqs</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                        <div class="col-lg-5 col-md-7">
+                            <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s mb-4">
+                                <h6 class="footer-title">Navigation Links</h6>
+                                <ul class="footer-links-inline d-flex flex-wrap" style="list-style: none; padding: 0;">
+                                    <li class="me-3 mb-2"><a href="index.html">Home</a></li>
+                                    <li class="me-3 mb-2"><a href="about.html">About</a></li>
+                                    <li class="me-3 mb-2"><a href="services.html">Services</a></li>
+                                    <li class="me-3 mb-2"><a href="projects.html">Projects</a></li>
+                                    <li class="me-3 mb-2"><a href="projects-masonry.html">Masonry</a></li>
+                                    <li class="me-3 mb-2"><a href="project-details.html">Case Study</a></li>
+                                    <li class="me-3 mb-2"><a href="blog.html">Blog</a></li>
+                                    <li class="me-3 mb-2"><a href="contact.html">Contact</a></li>
                                 </ul>
-                            </div>
-                            <div class="footer-widget widget_newsletter wow fadeInUp delay-0-4s">
-                                <form action="#">
-                                    <label for="email"><i class="far fa-envelope"></i></label>
-                                    <input id="email" type="email" placeholder="Email Address" required>
-                                    <button>Sign Up <i class="far fa-angle-right"></i></button>
-                                </form>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-5">
-                            <div class="footer-widget widget_contact_info wow fadeInUp delay-0-6s">
-                                <h6 class="footer-title">Address</h6>
+                            <div class="footer-widget widget_contact_info wow fadeInUp delay-0-6s mb-4">
+                                <h6 class="footer-title">Direct Connect</h6>
                                 <ul>
-                                    <li><i class="far fa-map-marker-alt"></i> 55 Main Street, 2nd block, New York City</li>
-                                    <li><i class="far fa-envelope"></i> <a href="mailto:support@gmail.com">support@gmail.com</a></li>
-                                    <li><i class="far fa-phone"></i> <a href="callto:+880(123)45688">+880 (123) 456 88</a></li>
+                                    <li><i class="far fa-envelope text-primary"></i> <a href="mailto:saqibbashir123@gmail.com">saqibbashir123@gmail.com</a></li>
+                                    <li><i class="fab fa-github text-primary"></i> <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer">github.com/saqibman</a></li>
+                                    <li><i class="fab fa-linkedin-in text-primary"></i> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom pt-20 pb-5 rpt-25">
+            <div class="footer-bottom pt-20 pb-15 rpt-25">
                 <div class="container">
-                   <div class="row">
+                   <div class="row align-items-center">
                        <div class="col-lg-6">
                             <div class="copyright-text">
-                                <p>Copyright @2023, <a href="index.html">Noxfolio</a> All Rights Reserved</p>
+                                <p>Copyright @2026, <a href="index.html">Muhammad Saqib Bashir</a>. All Rights Reserved.</p>
                             </div>
                        </div>
                        <div class="col-lg-6 text-lg-end">
                            <ul class="footer-bottom-nav">
-                               <li><a href="#">Facebook</a></li>
-                               <li><a href="#">Twitter</a></li>
-                               <li><a href="#">Instagram</a></li>
-                               <li><a href="#">LinkedIn</a></li>
+                               <li><a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-1"></i> GitHub</a></li>
+                               <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in me-1"></i> LinkedIn</a></li>
+                               <li><a href="mailto:saqibbashir123@gmail.com"><i class="far fa-envelope me-1"></i> Email</a></li>
                            </ul>
                        </div>
                    </div>
@@ -388,6 +807,11 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- For Contact Form -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
 
 </body>
 </html>

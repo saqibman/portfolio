@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Explore full-stack web development services by Muhammad Saqib Bashir: custom web apps, SaaS product engineering, LMS & examination platforms, CRM workflows, and API automation.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Noxfolio - Personal Portfolio Resume HTML Template || Services</title>
+    <title>Services &amp; Solutions || Muhammad Saqib Bashir - Senior Full-Stack Developer</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     
@@ -27,6 +27,125 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     
+    <style>
+        .service-card-deep {
+            background: var(--lighter-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .service-card-deep:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }
+        .service-card-deep .icon-number {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .service-card-deep .icon-number .icon {
+            font-size: 32px;
+            color: var(--primary-color);
+        }
+        .service-card-deep .icon-number .num {
+            font-size: 28px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.2);
+            font-family: 'DM Sans', sans-serif;
+        }
+        .service-card-deep h4 {
+            font-size: 20px;
+            margin-bottom: 14px;
+            color: #ffffff;
+        }
+        .service-card-deep p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 20px;
+        }
+        .service-card-deep .stack-tags {
+            margin-top: auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 15px;
+        }
+        .service-card-deep .stack-tags span {
+            display: inline-block;
+            font-size: 12px;
+            color: var(--primary-color);
+            background: rgba(245, 178, 51, 0.08);
+            padding: 2px 10px;
+            border-radius: 4px;
+            margin-right: 6px;
+            margin-bottom: 4px;
+        }
+        .pricing-item-custom {
+            background: var(--lighter-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px 32px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+        .pricing-item-custom.popular {
+            border-color: var(--primary-color);
+            background: rgba(245, 178, 51, 0.03);
+        }
+        .pricing-item-custom .popular-badge {
+            position: absolute;
+            top: -14px;
+            right: 25px;
+            background: var(--primary-color);
+            color: var(--black-color);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .pricing-item-custom h4 {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .pricing-item-custom .price-tag {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .pricing-item-custom ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+        .pricing-item-custom ul li {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .pricing-item-custom ul li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body class="home-one">
     <div class="page-wrapper">
@@ -35,14 +154,18 @@
         <div class="preloader"></div>
 
         <!-- main header -->
-        <header class="main-header menu-absolute">
+        <header class="main-header menu-absolute" id="header">
             <!--Header-Upper-->
             <div class="header-upper">
                 <div class="container container-1620 clearfix">
 
                     <div class="header-inner rel d-flex align-items-center">
                         <div class="logo-outer">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo" title="Logo"></a></div>
+                            <div class="logo">
+                                <a href="index.html" class="d-flex align-items-center" style="font-size: 22px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: 'DM Sans', sans-serif;">
+                                    <span style="color: var(--primary-color); margin-right: 6px; font-weight: 800;">&lt;/&gt;</span> Saqib<span style="color: var(--primary-color);">.</span>
+                                </a>
+                            </div>
                         </div>
 
                         <div class="nav-outer clearfix mx-auto">
@@ -50,8 +173,8 @@
                             <nav class="main-menu navbar-expand-lg">
                                 <div class="navbar-header">
                                    <div class="mobile-logo my-15">
-                                       <a href="index.html">
-                                            <img src="assets/images/logos/logo.png" alt="Logo" title="Logo">
+                                       <a href="index.html" style="font-size: 20px; font-weight: 700; color: #ffffff; text-decoration: none;">
+                                           <span style="color: var(--primary-color); font-weight: 800;">&lt;/&gt;</span> Saqib<span style="color: var(--primary-color);">.</span>
                                        </a>
                                    </div>
                                    
@@ -65,40 +188,20 @@
 
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
-                                        <li class="dropdown"><a href="#">Home</a>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li class="current"><a href="services.html">Services</a></li>
+                                        <li class="dropdown"><a href="projects.html">Projects</a>
                                             <ul>
-                                               <li class="dropdown"><a href="#">MultiPage</a>
-                                                    <ul>
-                                                        <li><a href="index.html">Home One</a></li>
-                                                        <li><a href="index2.html">Home Two</a></li>
-                                                    </ul>
-                                                </li>
-                                               <li class="dropdown"><a href="#">OnePage</a>
-                                                    <ul>
-                                                        <li><a href="indexonepage.html">Home One</a></li>
-                                                        <li><a href="index2onepage.html">Home Two</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="projects.html">Project Grid</a></li>
+                                                <li><a href="projects-masonry.html">Projects Masonry</a></li>
+                                                <li><a href="project-details.html">Project Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="about.html">about</a></li>
-                                        <li><a href="services.html">services</a></li>
-                                        <li class="dropdown"><a href="#">projects</a>
+                                        <li class="dropdown"><a href="blog.html">Blog</a>
                                             <ul>
-                                                <li><a href="projects.html">project Grid</a></li>
-                                                <li><a href="projects-masonry.html">projects masonry</a></li>
-                                                <li><a href="project-details.html">projects details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog standard</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="404.html">Error Page</a></li>
+                                                <li><a href="blog.html">Blog Standard</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -110,10 +213,12 @@
                         </div>
                         
                         <!-- Menu Button -->
-                        <div class="menu-btns">
+                        <div class="menu-btns d-flex align-items-center">
+                            <a href="contact.html" class="theme-btn style-two d-none d-lg-inline-block me-3 py-2 px-4" style="font-size: 14px;">Let's Talk <i class="far fa-paper-plane ms-1"></i></a>
+                            
                             <!-- menu sidbar -->
                             <div class="menu-sidebar">
-                                <button>
+                                <button title="Toggle Sidebar">
                                     <img src="assets/images/shape/sidebar-tottler.svg" alt="Toggler">
                                 </button>
                             </div>
@@ -133,33 +238,47 @@
             <div class="inner-box text-center">
                 <div class="cross-icon"><span class="fa fa-times"></span></div>
                 <div class="title">
-                    <h4>Get Appointment</h4>
+                    <h4>Muhammad Saqib Bashir</h4>
+                    <p class="text-white-50 mt-1" style="font-size: 14px;">Senior Full-Stack Developer</p>
                 </div>
 
-                <!--Appointment Form-->
+                <!--Quick Info-->
+                <div class="sidebar-info text-start px-2 my-4">
+                    <p class="text-white-50 mb-3" style="font-size: 14px; line-height: 1.6;">Specializing in scalable web applications, SaaS products, LMS &amp; Online Examination systems, CRM &amp; business automation platforms.</p>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="far fa-envelope text-primary me-2"></i> <a href="mailto:saqibbashir123@gmail.com" class="text-white-50">saqibbashir123@gmail.com</a>
+                    </div>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="fab fa-github text-primary me-2"></i> <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer" class="text-white-50">github.com/saqibman</a>
+                    </div>
+                    <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="fab fa-linkedin-in text-primary me-2"></i> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white-50">LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <!--Quick Form-->
                 <div class="appointment-form">
                     <form method="post" action="contact.html">
                         <div class="form-group">
-                            <input type="text" name="text" value="" placeholder="Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Email Address" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Message" rows="5"></textarea>
+                            <textarea placeholder="Tell me about your project..." rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="theme-btn">Submit now</button>
+                            <button type="submit" class="theme-btn w-100">Send Inquiry</button>
                         </div>
                     </form>
                 </div>
 
                 <!--Social Icons-->
-                <div class="social-style-one">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <div class="social-style-one mt-20">
+                    <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:saqibbashir123@gmail.com"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
         </section>
@@ -170,11 +289,11 @@
         <section class="page-banner-area pt-200 rpt-140 pb-100 rpb-60 rel z-1 text-center">
             <div class="container">
                 <div class="banner-inner text-white">
-                    <h1 class="page-title wow fadeInUp delay-0-2s">Popular Service</h1>
+                    <h1 class="page-title wow fadeInUp delay-0-2s">Services &amp; Solutions</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Popular Service</li>
+                            <li class="breadcrumb-item active">Services</li>
                         </ol>
                     </nav>
                 </div>
@@ -190,35 +309,36 @@
         <!-- Page Banner End -->
         
         
-        <!-- What I Do Area start -->
-        <section class="what-i-do-area pt-25 rpt-0 pb-130 rpb-100 rel z-1">
+        <!-- What I Do Overview start -->
+        <section class="what-i-do-area pt-40 pb-100 rpb-70 rel z-1">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-6">
-                        <div class="what-i-do-images rmb-55 wow fadeInUp delay-0-2s">
-                            <div class="first-image">
-                                <img src="assets/images/about/what-i-do1.jpg" alt="What I do">
+                    <div class="col-lg-5">
+                        <div class="what-i-do-images rmb-55 wow fadeInUp delay-0-2s text-center">
+                            <div class="image-box position-relative" style="display: inline-block; border-radius: 20px; overflow: hidden; border: 2px solid var(--border-color); box-shadow: 0 15px 40px rgba(0,0,0,0.5);">
+                                <img src="assets/images/about/user-sketch.jpg" alt="Muhammad Saqib Bashir" style="max-height: 440px; width: auto; object-fit: cover;">
                             </div>
-                            <div class="last-image">
-                                <img src="assets/images/about/what-i-do2.jpg" alt="What I do">
-                            </div>
-                            <div class="icon first"><i class="flaticon-asterisk-1"></i></div>
-                            <div class="icon last"><i class="flaticon-asterisk-1"></i></div>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-6">
+                    <div class="col-xl-6 col-lg-7">
                         <div class="what-i-do-content wow fadeInUp delay-0-4s">
-                            <div class="section-title mb-40">
-                                <span class="sub-title mb-15">What I Do</span>
-                                <h2>Real <span>Problem Solutions</span> Experience</h2>
-                                <p>At vero eos et accusamus etodio dignissimos ducimus praesen tium voluptat corrupti quos dolores quas molestias </p>
+                            <div class="section-title mb-30">
+                                <span class="sub-title mb-15">High-Impact Engineering</span>
+                                <h2>End-to-End Solutions <span>Engineered for Reliability</span></h2>
+                                <p class="mt-20" style="font-size: 16px; line-height: 1.8; color: rgba(255, 255, 255, 0.75);">
+                                    I provide high-caliber full-stack engineering services that take your product from concept to production-ready scale. Whether you need a ground-up SaaS application, an online exam platform handling thousands of simultaneous students, or an automated internal workflow, I deliver clean code and resilient architectures.
+                                </p>
                             </div>
-                            <ul class="list-style-two pb-50">
-                                <li>5+ Years Of Experience</li>
-                                <li>Professional Web Designer</li>
-                                <li>Mobile Apps Design</li>
+                            <ul class="list-style-two pb-30">
+                                <li>5+ Years of Production Experience in Full-Stack Web Development</li>
+                                <li>Specialized in High-Concurrency LMS &amp; Real-Time Examination Systems</li>
+                                <li>Enterprise SaaS, Custom CRM, and Dispatcher Management Engines</li>
+                                <li>Extensive API Integration &amp; Business Process Automation via n8n</li>
                             </ul>
-                            <a href="about.html" class="theme-btn">Learn More <i class="far fa-angle-right"></i></a>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="#all-services" class="theme-btn">Explore Services <i class="far fa-angle-down ms-1"></i></a>
+                                <a href="contact.html" class="theme-btn style-two">Request a Custom Quote <i class="far fa-paper-plane ms-1"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,79 +351,140 @@
                <span></span><span></span>
             </div>
         </section>
-        <!-- What I Do Area end -->
+        <!-- What I Do Overview end -->
         
         
-        <!-- Services Area start -->
-        <section class="services-area bgc-black pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+        <!-- Services Grid Area start -->
+        <section id="all-services" class="services-area bgc-black pt-120 rpt-90 pb-100 rpb-70 rel z-1">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
+                    <div class="col-xl-8 col-lg-10">
                         <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                            <span class="sub-title mb-15">Popular Services</span>
-                            <h2>My <span>Special Service</span> For your Business Development</h2>
+                            <span class="sub-title mb-15">Core Offerings</span>
+                            <h2>Specialized <span>Engineering Services</span></h2>
+                            <p class="text-white-50 mt-15">Tailored software engineering services designed to solve complex business challenges, optimize data flow, and scale seamlessly.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="service-item wow fadeInUp delay-0-2s">
-                            <div class="number">01.</div>
-                            <div class="content">
-                                <h4>Brand Identity Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                    <!-- Service 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card-deep wow fadeInUp delay-0-2s">
+                            <div>
+                                <div class="icon-number">
+                                    <div class="icon"><i class="fas fa-globe"></i></div>
+                                    <div class="num">01</div>
+                                </div>
+                                <h4>Web Application Development</h4>
+                                <p>Custom web apps engineered from the ground up with clean, maintainable architectures, fast loading speeds, responsive interfaces, and secure server-side logic.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <div class="stack-tags">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>Node.js</span>
+                                <span>React</span>
+                                <span>Vue.js</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="service-item wow fadeInUp delay-0-4s">
-                            <div class="number">02.</div>
-                            <div class="content">
-                                <h4>Website Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                    <!-- Service 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card-deep wow fadeInUp delay-0-3s">
+                            <div>
+                                <div class="icon-number">
+                                    <div class="icon"><i class="fas fa-cubes"></i></div>
+                                    <div class="num">02</div>
+                                </div>
+                                <h4>Custom Software &amp; Portals</h4>
+                                <p>Bespoke administrative portals and operational systems with fine-grained role-based access control (RBAC), complex audit logs, and optimized relational data models.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <div class="stack-tags">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Redis</span>
+                                <span>Bootstrap</span>
+                                <span>REST APIs</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="service-item wow fadeInUp delay-0-2s">
-                            <div class="number">03.</div>
-                            <div class="content">
-                                <h4>Mobile Application Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                    <!-- Service 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card-deep wow fadeInUp delay-0-4s">
+                            <div>
+                                <div class="icon-number">
+                                    <div class="icon"><i class="fas fa-rocket"></i></div>
+                                    <div class="num">03</div>
+                                </div>
+                                <h4>SaaS &amp; Product Engineering</h4>
+                                <p>Multi-tenant architectures, subscription tiers, Stripe billing integration, member management, and reactive frontend experiences built for high user retention.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <div class="stack-tags">
+                                <span>Next.js</span>
+                                <span>Node.js</span>
+                                <span>Supabase</span>
+                                <span>Stripe</span>
+                                <span>Tailwind</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="service-item wow fadeInUp delay-0-4s">
-                            <div class="number">04.</div>
-                            <div class="content">
-                                <h4>Motion Graphics Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                    <!-- Service 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card-deep wow fadeInUp delay-0-2s">
+                            <div>
+                                <div class="icon-number">
+                                    <div class="icon"><i class="fas fa-tasks"></i></div>
+                                    <div class="num">04</div>
+                                </div>
+                                <h4>CRM &amp; Workflow Management</h4>
+                                <p>Custom CRM systems, dispatcher engines, customer pipeline tracking, and operational automation tailored to eliminate manual bottlenecks.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <div class="stack-tags">
+                                <span>PHP</span>
+                                <span>CodeIgniter</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Webhooks</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="service-item wow fadeInUp delay-0-2s">
-                            <div class="number">05.</div>
-                            <div class="content">
-                                <h4>Website Development</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                    <!-- Service 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card-deep wow fadeInUp delay-0-3s">
+                            <div>
+                                <div class="icon-number">
+                                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                                    <div class="num">05</div>
+                                </div>
+                                <h4>LMS &amp; Online Examination</h4>
+                                <p>Comprehensive assessment platforms, timed exams, randomized question banks, real-time autosave, instant scoring, and detailed performance reporting.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <div class="stack-tags">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>MySQL</span>
+                                <span>WebSockets</span>
+                                <span>Audio/Video</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="service-item wow fadeInUp delay-0-4s">
-                            <div class="number">06.</div>
-                            <div class="content">
-                                <h4>SEO & Digital Marketing</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                    <!-- Service 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card-deep wow fadeInUp delay-0-4s">
+                            <div>
+                                <div class="icon-number">
+                                    <div class="icon"><i class="fas fa-plug"></i></div>
+                                    <div class="num">06</div>
+                                </div>
+                                <h4>API &amp; Business Automation</h4>
+                                <p>Robust RESTful API design, third-party service connections, webhook listeners, payment processing, and automated enterprise pipelines utilizing n8n.</p>
                             </div>
-                            <a href="service-details.html" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                            <div class="stack-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>n8n</span>
+                                <span>REST</span>
+                                <span>JSON APIs</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -316,79 +497,78 @@
                <span></span><span></span>
             </div>
         </section>
-        <!-- Services Area end -->
+        <!-- Services Grid Area end -->
         
         
-        <!-- Pricing Area start -->
-        <section id="pricing" class="pricing-area pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+        <!-- Pricing / Engagement Area start -->
+        <section id="pricing" class="pricing-area pt-120 rpt-90 pb-100 rpb-70 rel z-1">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-12">
+                    <div class="col-xl-8 col-lg-10">
                         <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                            <span class="sub-title mb-15">Pricing Package</span>
-                            <h2>Amazing <span>Pricing</span> For your Projects</h2>
+                            <span class="sub-title mb-15">Engagement Models</span>
+                            <h2>Flexible <span>Project Tiers</span> &amp; Quotes</h2>
+                            <p class="text-white-50 mt-15">Every project is unique. I offer transparent, milestone-driven pricing based on your specific requirements and scope.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
+                    <!-- Tier 1 -->
                     <div class="col-lg-4 col-md-6">
-                        <div class="pricing-item wow fadeInUp delay-0-2s">
-                            <div class="pricing-header">
-                                <h4 class="title">Basic Plan</h4>
-                                <p class="save-percent">Try Out Basic Plan Save <span>20%</span></p>
-                                <span class="price">19.95</span>
-                            </div>
-                            <div class="pricing-details">
-                                <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
+                        <div class="pricing-item-custom wow fadeInUp delay-0-2s">
+                            <div>
+                                <h4>MVP &amp; Quick Launch</h4>
+                                <p class="text-white-50" style="font-size: 13px;">Ideal for startups and businesses looking to validate their core product concept quickly.</p>
+                                <div class="price-tag">Custom Quote</div>
                                 <ul>
-                                    <li>Website Design</li>
-                                    <li>Mobile Apps Design</li>
-                                    <li>Product Design</li>
-                                    <li class="unable">Digital Marketing</li>
-                                    <li class="unable">Custom Support</li>
+                                    <li><i class="fas fa-check"></i> Core Feature Architecture &amp; UI</li>
+                                    <li><i class="fas fa-check"></i> Frontend &amp; Backend Implementation</li>
+                                    <li><i class="fas fa-check"></i> Relational Database Schema</li>
+                                    <li><i class="fas fa-check"></i> User Auth &amp; Role Setup</li>
+                                    <li><i class="fas fa-check"></i> Essential Third-Party Integrations</li>
+                                    <li><i class="fas fa-check"></i> Responsive Mobile &amp; Desktop UI</li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">Choose Package <i class="far fa-angle-right"></i></a>
                             </div>
+                            <a href="contact.html" class="theme-btn w-100 text-center">Discuss MVP Scope <i class="far fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
+                    <!-- Tier 2 (Popular) -->
                     <div class="col-lg-4 col-md-6">
-                        <div class="pricing-item wow fadeInUp delay-0-4s">
-                            <div class="pricing-header">
-                                <h4 class="title">Standard Plan</h4>
-                                <p class="save-percent">Try Out Basic Plan Save <span>35%</span></p>
-                                <span class="price">19.95</span>
-                            </div>
-                            <div class="pricing-details">
-                                <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
+                        <div class="pricing-item-custom popular wow fadeInUp delay-0-3s">
+                            <span class="popular-badge">Most Popular</span>
+                            <div>
+                                <h4>Full-Scale Application</h4>
+                                <p class="text-white-50" style="font-size: 13px;">Complete end-to-end web software, SaaS platform, or custom LMS with high performance.</p>
+                                <div class="price-tag">Custom Quote</div>
                                 <ul>
-                                    <li>Website Design</li>
-                                    <li>Mobile Apps Design</li>
-                                    <li>Product Design</li>
-                                    <li>Digital Marketing</li>
-                                    <li>Custom Support</li>
+                                    <li><i class="fas fa-check"></i> Complete Modular Architecture (Laravel/Node)</li>
+                                    <li><i class="fas fa-check"></i> Reactive UI (React / Next.js / Vue.js)</li>
+                                    <li><i class="fas fa-check"></i> Complex Database Design &amp; Optimization</li>
+                                    <li><i class="fas fa-check"></i> Multi-Role RBAC &amp; Admin Dashboards</li>
+                                    <li><i class="fas fa-check"></i> Payment Gateway &amp; Subscriptions</li>
+                                    <li><i class="fas fa-check"></i> Performance Tuning &amp; High Concurrency</li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">Choose Package <i class="far fa-angle-right"></i></a>
                             </div>
+                            <a href="contact.html" class="theme-btn w-100 text-center">Request Solution Quote <i class="far fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
+                    <!-- Tier 3 -->
                     <div class="col-lg-4 col-md-6">
-                        <div class="pricing-item wow fadeInUp delay-0-6s">
-                            <div class="pricing-header">
-                                <h4 class="title">Basic Plan</h4>
-                                <p class="save-percent">Try Out Basic Plan Save <span>45%</span></p>
-                                <span class="price">19.95</span>
-                            </div>
-                            <div class="pricing-details">
-                                <p>Sed perspiciatis unde natus totam see rem aperiam eaque inventore</p>
+                        <div class="pricing-item-custom wow fadeInUp delay-0-4s">
+                            <div>
+                                <h4>Dedicated Retainer</h4>
+                                <p class="text-white-50" style="font-size: 13px;">Continuous senior engineering capacity for expanding platforms and complex systems.</p>
+                                <div class="price-tag">Custom Quote</div>
                                 <ul>
-                                    <li>Website Design</li>
-                                    <li>Mobile Apps Design</li>
-                                    <li>Product Design</li>
-                                    <li>Digital Marketing</li>
-                                    <li>Custom Support</li>
+                                    <li><i class="fas fa-check"></i> Dedicated Sprint Hours per Month</li>
+                                    <li><i class="fas fa-check"></i> Feature Development &amp; Code Refactoring</li>
+                                    <li><i class="fas fa-check"></i> Performance Audits &amp; Optimization</li>
+                                    <li><i class="fas fa-check"></i> API &amp; Webhook Maintenance</li>
+                                    <li><i class="fas fa-check"></i> Priority Bug Resolution &amp; Support</li>
+                                    <li><i class="fas fa-check"></i> Direct Slack / Video Sync Channels</li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">Choose Package <i class="far fa-angle-right"></i></a>
                             </div>
+                            <a href="contact.html" class="theme-btn w-100 text-center">Hire Dedicated Engineer <i class="far fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -401,7 +581,7 @@
                <span></span><span></span>
             </div>
         </section>
-        <!-- Pricing Area end -->
+        <!-- Pricing / Engagement Area end -->
         
         
         <!-- footer area start -->
@@ -409,59 +589,61 @@
             <div class="footer-top-wrap bgc-black pt-100 pb-75">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-2 col-md-12">
-                            <div class="footer-widget widget_logo wow fadeInUp delay-0-2s">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo"></a>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget widget_about wow fadeInUp delay-0-2s mb-4">
+                                <div class="footer-logo mb-20">
+                                    <a href="index.html" class="d-flex align-items-center" style="font-size: 24px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: 'DM Sans', sans-serif;">
+                                        <span style="color: var(--primary-color); margin-right: 6px; font-weight: 800;">&lt;/&gt;</span> M. Saqib Bashir
+                                    </a>
+                                </div>
+                                <h6 class="text-white mb-10" style="font-size: 15px;">Senior Full-Stack Developer</h6>
+                                <p class="text-white-50" style="font-size: 14px; line-height: 1.6; max-width: 340px;">Building scalable web applications, SaaS products, business platforms, and automation solutions with clean code and high performance.</p>
+                                <div class="tech-stack-line mt-15 text-white-50" style="font-size: 12px;">
+                                    PHP | Laravel | CodeIgniter | Node.js | React | Next.js | Vue.js | MySQL | MongoDB | Supabase | n8n
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-7">
-                            <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
-                                <h6 class="footer-title">Quick Link</h6>
-                                <ul>
-                                    <li><a href="services.html">Service</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="services.html#pricing">Pricing</a></li>
-                                    <li><a href="about.html#faqs">Faqs</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                        <div class="col-lg-5 col-md-7">
+                            <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s mb-4">
+                                <h6 class="footer-title">Navigation Links</h6>
+                                <ul class="footer-links-inline d-flex flex-wrap" style="list-style: none; padding: 0;">
+                                    <li class="me-3 mb-2"><a href="index.html">Home</a></li>
+                                    <li class="me-3 mb-2"><a href="about.html">About</a></li>
+                                    <li class="me-3 mb-2"><a href="services.html">Services</a></li>
+                                    <li class="me-3 mb-2"><a href="projects.html">Projects</a></li>
+                                    <li class="me-3 mb-2"><a href="projects-masonry.html">Masonry</a></li>
+                                    <li class="me-3 mb-2"><a href="project-details.html">Case Study</a></li>
+                                    <li class="me-3 mb-2"><a href="blog.html">Blog</a></li>
+                                    <li class="me-3 mb-2"><a href="contact.html">Contact</a></li>
                                 </ul>
-                            </div>
-                            <div class="footer-widget widget_newsletter wow fadeInUp delay-0-4s">
-                                <form action="#">
-                                    <label for="email"><i class="far fa-envelope"></i></label>
-                                    <input id="email" type="email" placeholder="Email Address" required>
-                                    <button>Sign Up <i class="far fa-angle-right"></i></button>
-                                </form>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-5">
-                            <div class="footer-widget widget_contact_info wow fadeInUp delay-0-6s">
-                                <h6 class="footer-title">Address</h6>
+                            <div class="footer-widget widget_contact_info wow fadeInUp delay-0-6s mb-4">
+                                <h6 class="footer-title">Direct Connect</h6>
                                 <ul>
-                                    <li><i class="far fa-map-marker-alt"></i> 55 Main Street, 2nd block, New York City</li>
-                                    <li><i class="far fa-envelope"></i> <a href="mailto:support@gmail.com">support@gmail.com</a></li>
-                                    <li><i class="far fa-phone"></i> <a href="callto:+880(123)45688">+880 (123) 456 88</a></li>
+                                    <li><i class="far fa-envelope text-primary"></i> <a href="mailto:saqibbashir123@gmail.com">saqibbashir123@gmail.com</a></li>
+                                    <li><i class="fab fa-github text-primary"></i> <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer">github.com/saqibman</a></li>
+                                    <li><i class="fab fa-linkedin-in text-primary"></i> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom pt-20 pb-5 rpt-25">
+            <div class="footer-bottom pt-20 pb-15 rpt-25">
                 <div class="container">
-                   <div class="row">
+                   <div class="row align-items-center">
                        <div class="col-lg-6">
                             <div class="copyright-text">
-                                <p>Copyright @2023, <a href="index.html">Noxfolio</a> All Rights Reserved</p>
+                                <p>Copyright @2026, <a href="index.html">Muhammad Saqib Bashir</a>. All Rights Reserved.</p>
                             </div>
                        </div>
                        <div class="col-lg-6 text-lg-end">
                            <ul class="footer-bottom-nav">
-                               <li><a href="#">Facebook</a></li>
-                               <li><a href="#">Twitter</a></li>
-                               <li><a href="#">Instagram</a></li>
-                               <li><a href="#">LinkedIn</a></li>
+                               <li><a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-1"></i> GitHub</a></li>
+                               <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in me-1"></i> LinkedIn</a></li>
+                               <li><a href="mailto:saqibbashir123@gmail.com"><i class="far fa-envelope me-1"></i> Email</a></li>
                            </ul>
                        </div>
                    </div>
@@ -501,6 +683,11 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- For Contact Form -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
 
 </body>
 </html>
