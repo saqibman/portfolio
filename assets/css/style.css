@@ -6863,3 +6863,201 @@ blockquote {
     display: none;
   }
 }
+
+/* ==========================================================================
+   Direct Contact Channels (Call, WhatsApp, Mail)
+   ========================================================================== */
+.direct-channel-card {
+  background: var(--lighter-color, #17171a);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+  border-radius: 20px;
+  padding: 34px 28px;
+  margin-bottom: 24px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 24px);
+  position: relative;
+  overflow: hidden;
+}
+
+.direct-channel-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.direct-channel-card:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.direct-channel-card.channel-call:hover::before {
+  background: var(--primary-color, #f5b233);
+}
+
+.direct-channel-card.channel-whatsapp:hover::before {
+  background: #25D366;
+}
+
+.direct-channel-card.channel-mail:hover::before {
+  background: #4A90E2;
+}
+
+.direct-channel-card .channel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.direct-channel-card .channel-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.channel-call .channel-icon {
+  background: rgba(245, 178, 51, 0.12);
+  color: var(--primary-color, #f5b233);
+}
+
+.channel-whatsapp .channel-icon {
+  background: rgba(37, 211, 102, 0.12);
+  color: #25D366;
+}
+
+.channel-mail .channel-icon {
+  background: rgba(74, 144, 226, 0.12);
+  color: #4A90E2;
+}
+
+.direct-channel-card .channel-badge {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.direct-channel-card h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.direct-channel-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.direct-channel-card .channel-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 22px;
+  word-break: break-all;
+}
+
+.direct-channel-card .channel-btn {
+  width: 100%;
+  text-align: center;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.channel-call .channel-btn {
+  background: var(--primary-color, #f5b233);
+  color: #000000;
+}
+.channel-call .channel-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 20px rgba(245, 178, 51, 0.35);
+}
+
+.channel-whatsapp .channel-btn {
+  background: #25D366;
+  color: #ffffff;
+}
+.channel-whatsapp .channel-btn:hover {
+  background: #20BA56;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+}
+
+.channel-mail .channel-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.channel-mail .channel-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.sidebar-direct-actions .action-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+.sidebar-direct-actions .action-link.wa {
+  background: #25D366;
+  color: #ffffff;
+}
+.sidebar-direct-actions .action-link.wa:hover {
+  background: #20BA56;
+}
+.sidebar-direct-actions .action-link.call {
+  background: rgba(254, 74, 34, 0.12);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.sidebar-direct-actions .action-link.call:hover {
+  background: var(--primary-color);
+  color: #000000;
+}
+.sidebar-direct-actions .action-link.mail {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+.sidebar-direct-actions .action-link.mail:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+}

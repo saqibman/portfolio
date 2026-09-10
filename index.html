@@ -319,15 +319,25 @@
                             rel="noopener noreferrer" class="text-white-50">LinkedIn Profile</a>
                     </div>
                     <div class="info-item mb-2" style="font-size: 14px;">
+                        <i class="fas fa-phone-alt text-primary me-2"></i> <a href="tel:+923084185338" class="text-white-50">+92 308 4185338</a>
+                    </div>
+                    <div class="info-item mb-2" style="font-size: 14px;">
                         <i class="fab fa-whatsapp text-primary me-2"></i> <a href="https://wa.me/923084185338"
                             target="_blank" rel="noopener noreferrer" class="text-white-50">WhatsApp: 03084185338</a>
                     </div>
                 </div>
 
-                <!--Quick Action-->
-                <div class="mt-4">
-                    <a href="#contact" class="theme-btn w-100 close-menu">Start a Conversation <i
-                            class="far fa-arrow-right ms-2"></i></a>
+                <!-- Direct Reach Channels (Call, WhatsApp, Mail) -->
+                <div class="sidebar-direct-actions mt-4 mb-4">
+                    <a href="https://wa.me/923084185338" target="_blank" rel="noopener noreferrer" class="action-link wa">
+                        <i class="fab fa-whatsapp" style="font-size: 18px;"></i> WhatsApp (03084185338)
+                    </a>
+                    <a href="tel:+923084185338" class="action-link call">
+                        <i class="fas fa-phone-alt"></i> Call: 03084185338
+                    </a>
+                    <a href="mailto:saqibman.webdeveloper@gmail.com" class="action-link mail">
+                        <i class="far fa-envelope"></i> Email Me Directly
+                    </a>
                 </div>
 
                 <!--Social Icons-->
@@ -1569,77 +1579,80 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <div class="contact-form contact-form-wrap form-style-one wow fadeInUp delay-0-4s">
-                            <form id="contactForm" class="contactForm" name="contactForm" action="#" method="post">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="name">Your Name</label>
-                                            <input type="text" id="name" name="name" class="form-control" value=""
-                                                placeholder="e.g. John Doe" required
-                                                data-error="Please enter your Name">
-                                            <label for="name" class="for-icon"><i class="far fa-user"></i></label>
-                                            <div class="help-block with-errors"></div>
+                        <div class="direct-channels-hub wow fadeInUp delay-0-4s">
+                            <div class="row">
+                                <!-- Call Card -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="direct-channel-card channel-call">
+                                        <div>
+                                            <div class="channel-header">
+                                                <div class="channel-icon"><i class="fas fa-phone-alt"></i></div>
+                                                <span class="channel-badge">Direct Line</span>
+                                            </div>
+                                            <h4>Phone Call</h4>
+                                            <p>Immediate reachability for urgent discussions, technical consultations, and scoping.</p>
+                                            <span class="channel-value">+92 308 4185338</span>
                                         </div>
+                                        <a href="tel:+923084185338" class="channel-btn">
+                                            <i class="fas fa-phone-alt"></i> Call: 03084185338
+                                        </a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="email">Email Address</label>
-                                            <input type="email" id="email" name="email" class="form-control" value=""
-                                                placeholder="e.g. john@business.com" required
-                                                data-error="Please enter your Email">
-                                            <label for="email" class="for-icon"><i class="far fa-envelope"></i></label>
-                                            <div class="help-block with-errors"></div>
+                                </div>
+
+                                <!-- WhatsApp Card -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="direct-channel-card channel-whatsapp">
+                                        <div>
+                                            <div class="channel-header">
+                                                <div class="channel-icon"><i class="fab fa-whatsapp"></i></div>
+                                                <span class="channel-badge" style="color: #25D366; border-color: rgba(37,211,102,0.3);">Instant Chat</span>
+                                            </div>
+                                            <h4>WhatsApp Chat</h4>
+                                            <p>Fast messaging, project briefs, voice notes, document sharing, and daily updates.</p>
+                                            <span class="channel-value">+92 308 4185338</span>
                                         </div>
+                                        <a href="https://wa.me/923084185338" target="_blank" rel="noopener noreferrer" class="channel-btn">
+                                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                                        </a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="project_type">Project Type</label>
-                                            <select name="project_type" id="project_type" class="form-control"
-                                                style="background: #17171a; color: #fff; border-color: rgba(255,255,255,0.1);">
-                                                <option value="Web Application">Web Application</option>
-                                                <option value="SaaS Platform">SaaS Platform</option>
-                                                <option value="LMS">LMS</option>
-                                                <option value="Online Examination System">Online Examination System
-                                                </option>
-                                                <option value="CRM / Workflow">CRM / Workflow</option>
-                                                <option value="E-Commerce">E-Commerce</option>
-                                                <option value="Business Website">Business Website</option>
-                                                <option value="API / Integration">API / Integration</option>
-                                                <option value="Automation">Automation</option>
-                                                <option value="Existing Application Enhancement">Existing Application
-                                                    Enhancement</option>
-                                                <option value="Other">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="budget">Budget / Engagement Type</label>
-                                            <input type="text" id="budget" name="budget" class="form-control" value=""
-                                                placeholder="e.g. Fixed Project / Retainer / Custom">
-                                            <label for="budget" class="for-icon"><i
-                                                    class="far fa-dollar-sign"></i></label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="message">Your Message / Requirements</label>
-                                            <textarea name="message" id="message" class="form-control" rows="4"
-                                                placeholder="Describe your project, goals, requirements, or timeline..."
-                                                required data-error="Please enter your Message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group mb-0">
-                                            <button type="submit" class="theme-btn">Let's Talk <i
-                                                    class="far fa-paper-plane ms-1"></i></button>
-                                            <div id="msgSubmit" class="hidden"></div>
+                                </div>
+
+                                <!-- Email Card -->
+                                <div class="col-md-12 mb-4">
+                                    <div class="direct-channel-card channel-mail">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-7">
+                                                <div class="channel-header">
+                                                    <div class="channel-icon"><i class="far fa-envelope"></i></div>
+                                                    <span class="channel-badge">Official Mail</span>
+                                                </div>
+                                                <h4>Direct Email</h4>
+                                                <p class="mb-2">Send comprehensive project specifications, RFPs, architecture documents, or contracts.</p>
+                                                <span class="channel-value mb-md-0">saqibman.webdeveloper@gmail.com</span>
+                                            </div>
+                                            <div class="col-md-5 text-md-end mt-3 mt-md-0">
+                                                <a href="mailto:saqibman.webdeveloper@gmail.com" class="channel-btn">
+                                                    <i class="far fa-envelope"></i> Send an Email
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+
+                                <!-- Direct Availability Note -->
+                                <div class="col-md-12">
+                                    <div class="p-3 rounded-4 d-flex flex-wrap align-items-center justify-content-between" style="background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.12);">
+                                        <div class="d-flex align-items-center mb-2 mb-md-0">
+                                            <i class="fas fa-bolt text-primary me-2" style="font-size: 18px;"></i>
+                                            <span class="text-white-50" style="font-size: 14px;">Direct access to Senior Developer &bull; Fast turnaround &bull; Remote &amp; Global availability</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <a href="https://www.linkedin.com/in/muhammad-saqib-bashir/" target="_blank" rel="noopener noreferrer" class="text-white-50" style="font-size: 14px;"><i class="fab fa-linkedin-in me-1 text-primary"></i> LinkedIn</a>
+                                            <a href="https://github.com/saqibman" target="_blank" rel="noopener noreferrer" class="text-white-50" style="font-size: 14px;"><i class="fab fa-github me-1 text-primary"></i> GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1768,11 +1781,6 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
-
-    <!-- For Contact Form -->
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
 
 
     <!-- Floating Social Media Edge Dock (WhatsApp & LinkedIn) -->
