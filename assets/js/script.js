@@ -139,8 +139,23 @@
             });
         }
         
-        
-        
+        // ## Project Card Slider
+        if ($('.project-slider').length) {
+            $('.project-slider').slick({
+                dots: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3500,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>',
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: false
+            });
+        }
+
         // ## Project Filter
         $(".project-filter li").on('click', function () {
             $(".project-filter li").removeClass("current");

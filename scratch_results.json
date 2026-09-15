@@ -1,0 +1,196 @@
+[
+  {
+    "name": "suitereport",
+    "url": "https://suitereport.ai",
+    "category": "AI & Enterprise Analytics",
+    "desc": "AI-driven reporting & enterprise insights dashboard",
+    "image": "suitereport.png",
+    "actualTitle": "NetSuite Reporting & FP&A Software – AI-Powered | SuiteReport",
+    "status": "success"
+  },
+  {
+    "name": "salmandevelopers",
+    "url": "https://salmandevelopers.com",
+    "category": "Real Estate & Development",
+    "desc": "Corporate real estate development showcase & property portfolio",
+    "image": "salmandevelopers.png",
+    "status": "partial"
+  },
+  {
+    "name": "equinelistings",
+    "url": "https://equinelistings.com",
+    "category": "Classifieds & Marketplace",
+    "desc": "Premier equine marketplace platform for buying, selling & horse listings",
+    "image": "equinelistings.png",
+    "actualTitle": "EquiMarket — The Premier Marketplace for Equestrians - EquiMarket",
+    "status": "success"
+  },
+  {
+    "name": "brainbizz",
+    "url": "https://www.brainbizz.com",
+    "category": "Digital Agency & Solutions",
+    "desc": "Digital marketing, web engineering & brand development portal",
+    "image": "brainbizz.png",
+    "status": "partial"
+  },
+  {
+    "name": "hellofriday",
+    "url": "https://www.hellofriday.io",
+    "category": "HR & Workplace Experience SaaS",
+    "desc": "All-in-one HR, employee engagement, and workplace culture SaaS",
+    "image": "hellofriday.png",
+    "actualTitle": "Just a moment...",
+    "status": "success"
+  },
+  {
+    "name": "pass4success",
+    "url": "https://www.pass4success.com",
+    "category": "LMS & Certification Prep",
+    "desc": "IT certification exam prep platform with interactive mock tests",
+    "image": "pass4success.png",
+    "actualTitle": "Just a moment...",
+    "status": "success"
+  },
+  {
+    "name": "certprep",
+    "url": "https://www.certprep.io",
+    "category": "LMS & Certification Prep",
+    "desc": "Next-gen certification prep hub with real-time test simulations",
+    "image": "certprep.png",
+    "actualTitle": "Smash Your IT Cert with Verified Exam Questions - CertPrep",
+    "status": "success"
+  },
+  {
+    "name": "certboosters",
+    "url": "https://www.certboosters.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Exam practice engines & professional certification prep suite",
+    "image": "certboosters.png",
+    "actualTitle": "Skill Up with Our Certification Exams - CertBoosters",
+    "status": "success"
+  },
+  {
+    "name": "study4exam",
+    "url": "https://study4exam.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Global IT exam prep portal featuring real exam questions & practice tests",
+    "image": "study4exam.png",
+    "actualTitle": "Study4Exam - Free IT Certification Practice Exams",
+    "status": "success"
+  },
+  {
+    "name": "premiumdumps",
+    "url": "https://www.premiumdumps.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Verified exam study material & interactive question engines",
+    "image": "premiumdumps.png",
+    "actualTitle": "Premium Dumps for Certification Exams | Real Exam Questions",
+    "status": "success"
+  },
+  {
+    "name": "itexamstopics",
+    "url": "https://www.itexamstopics.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Comprehensive IT exam topics repository & discussion forum",
+    "image": "itexamstopics.png",
+    "actualTitle": "ITExamsTopics – Topic-Based Learning for Exam Preparation",
+    "status": "success"
+  },
+  {
+    "name": "prepbolt",
+    "url": "https://prepbolt.com",
+    "category": "LMS & Certification Prep",
+    "desc": "High-speed certification testing & flashcard assessment platform",
+    "image": "prepbolt.png",
+    "actualTitle": "PrepBolt | Exam Syllabus Discussions, Practice Tests & PDF Files",
+    "status": "success"
+  },
+  {
+    "name": "justcerts",
+    "url": "https://www.justcerts.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Trusted certification exam questions & web test engine portal",
+    "image": "justcerts.png",
+    "actualTitle": "JustCerts | Best Practice Test Software for Certification Exams",
+    "status": "success"
+  },
+  {
+    "name": "pass4future",
+    "url": "https://www.pass4future.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Future-ready exam simulation suite for IT & enterprise certifications",
+    "image": "pass4future.png",
+    "actualTitle": "Just a moment...",
+    "status": "success"
+  },
+  {
+    "name": "certshero",
+    "url": "https://www.certshero.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Heroic exam prep resources with desktop & web-based test engine",
+    "image": "certshero.png",
+    "actualTitle": "Just a moment...",
+    "status": "success"
+  },
+  {
+    "name": "p2pexams",
+    "url": "https://www.p2pexams.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Peer-to-peer exam prep portal with desktop and online testing tools",
+    "image": "p2pexams.png",
+    "actualTitle": "Just a moment...",
+    "status": "success"
+  },
+  {
+    "name": "certsfire",
+    "url": "https://www.certsfire.com",
+    "category": "LMS & Certification Prep",
+    "desc": "Instant exam practice dumps & online assessment simulator",
+    "image": "certsfire.png",
+    "status": "partial"
+  },
+  {
+    "name": "b1reports",
+    "url": "https://b1reports.com",
+    "category": "SaaS & Enterprise Reporting",
+    "desc": "SAP Business One reporting & analytics automation platform",
+    "image": "b1reports.png",
+    "actualTitle": "SAP Business One Reporting & FP&A, Powered by AI | B1Reports",
+    "status": "success"
+  },
+  {
+    "name": "tecphantom",
+    "url": "https://www.tecphantom.com",
+    "category": "IT Consulting & Software",
+    "desc": "Enterprise software consulting, custom dev & cloud infrastructure",
+    "image": "tecphantom.png",
+    "actualTitle": "Checking your browser before accessing. Just a moment...",
+    "status": "success"
+  },
+  {
+    "name": "certificationsbuzz",
+    "url": "https://www.certificationsbuzz.com",
+    "category": "LMS & Certification Prep",
+    "desc": "IT certification practice material & online testing ecosystem",
+    "image": "certificationsbuzz.png",
+    "status": "partial"
+  },
+  {
+    "name": "interioralkhair",
+    "url": "https://interioralkhair.com",
+    "category": "E-Commerce & Interior Design",
+    "desc": "Interior design studio, custom woodwork & architectural showcase",
+    "image": "interioralkhair.png",
+    "actualTitle": "Best Interior Renovation Company in Dubai - 0585900841",
+    "status": "success"
+  },
+  {
+    "name": "rightfixers",
+    "url": "https://www.rightfixers.com",
+    "category": "On-Demand Services Platform",
+    "desc": "Home maintenance & skilled technician booking marketplace",
+    "image": "rightfixers.png",
+    "actualTitle": "Handyman Services Dubai - Handyman Services UAE - RightFixers.com",
+    "status": "success"
+  }
+]
