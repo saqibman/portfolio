@@ -166,9 +166,7 @@
                 $(".project-masonry-active").isotope({
                     itemSelector: '.item',
                     filter: selector,
-                    masonry: {
-                        columnWidth: '.item'
-                    }
+                    layoutMode: 'fitRows'
                 });
             });
 
@@ -302,6 +300,7 @@
                 $('.project-masonry-active').isotope({
                     // options
                     itemSelector: '.item',
+                    layoutMode: 'fitRows'
                 });
             });
         }

@@ -48,6 +48,11 @@
             border-color: var(--primary-color);
         }
 
+        .project-masonry-active > .item {
+            display: flex;
+            flex-direction: column;
+        }
+
         .project-masonry-card {
             background: var(--lighter-color);
             border: 1px solid var(--border-color);
@@ -58,6 +63,50 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            height: calc(100% - 30px);
+            min-height: 540px;
+        }
+
+        .card-header-meta {
+            min-height: 32px;
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-body-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+        }
+
+        .card-body-content h4 {
+            font-size: 19px;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            min-height: 28px;
+        }
+
+        .card-body-content p {
+            min-height: 72px;
+            flex-grow: 1;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .tech-wrap {
+            min-height: 72px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .card-footer-links {
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .project-masonry-card:hover {
@@ -437,23 +486,23 @@
                         <div class="section-title mb-30 wow fadeInUp delay-0-2s">
                             <span class="sub-title mb-15">Dynamic Showcase</span>
                             <h2>Featured &amp; <span>Live Production Projects</span></h2>
-                            <p class="text-white-50">Explore 26 production systems: interactive LMS platforms, AI &amp; enterprise SaaS, custom theme builders, and live client web portals.</p>
+                            <p class="text-white-50">Explore 24 production systems: interactive LMS platforms, AI &amp; enterprise SaaS, custom theme builders, and live client web portals.</p>
                         </div>
                     </div>
                 </div>
 
                 <ul class="project-filter filter-btns-one justify-content-center pb-35 wow fadeInUp delay-0-2s">
-                    <li data-filter="*" class="current">Show All (26)</li>
+                    <li data-filter="*" class="current">Show All (24)</li>
                     <li data-filter=".featured">Featured Sliders (4)</li>
-                    <li data-filter=".lms">LMS &amp; Exams (13)</li>
-                    <li data-filter=".saas">SaaS &amp; CRM (5)</li>
+                    <li data-filter=".lms">LMS &amp; Exams (12)</li>
+                    <li data-filter=".saas">SaaS &amp; CRM (4)</li>
                     <li data-filter=".web">Web Platforms (4)</li>
                 </ul>
 
                 <div class="row project-masonry-active">
 
                     <!-- #01: NextVisionScholar (Featured Multi-Image Slider) -->
-                    <div class="col-xl-4 col-md-6 item featured lms saas">
+                    <div class="col-xl-4 col-md-6 item featured">
                         <div class="project-masonry-card wow fadeInUp delay-0-2s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">Academy &amp; School SaaS</span>
@@ -483,7 +532,7 @@
                     </div>
 
                     <!-- #02: Al-Madrasah Management System (Featured Multi-Image Slider) -->
-                    <div class="col-xl-4 col-md-6 item featured lms">
+                    <div class="col-xl-4 col-md-6 item featured">
                         <div class="project-masonry-card wow fadeInUp delay-0-4s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">Islamic LMS &amp; Madrasah</span>
@@ -512,7 +561,7 @@
                     </div>
 
                     <!-- #03: SpidersNet Automotive SaaS (Featured Multi-Image Slider) -->
-                    <div class="col-xl-4 col-md-6 item featured saas web">
+                    <div class="col-xl-4 col-md-6 item featured">
                         <div class="project-masonry-card wow fadeInUp delay-0-6s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">Automotive SaaS &amp; Builder</span>
@@ -541,7 +590,7 @@
                     </div>
 
                     <!-- #04: Brownbook BizSite Builder (Featured Multi-Image Slider) -->
-                    <div class="col-xl-4 col-md-6 item featured saas web">
+                    <div class="col-xl-4 col-md-6 item featured">
                         <div class="project-masonry-card wow fadeInUp delay-0-2s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">SaaS &amp; Website Theme Builder</span>
@@ -974,39 +1023,12 @@
                         </div>
                     </div>
 
-                    <!-- #20: CertificationsBuzz (Live Site) -->
-                    <div class="col-xl-4 col-md-6 item lms">
-                        <div class="project-masonry-card wow fadeInUp delay-0-4s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">Certification Prep Ecosystem</span>
-                                <span class="proj-num">#20</span>
-                            </div>
-                            <div class="project-card-media project-single-thumb">
-                                <a href="https://www.certificationsbuzz.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/projects/certificationsbuzz.png" alt="CertificationsBuzz">
-                                </a>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://www.certificationsbuzz.com" target="_blank" rel="noopener noreferrer">CertificationsBuzz</a></h4>
-                                <p>Comprehensive IT certification practice material portal with web-based assessment engines and practice question banks.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">PHP</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">HTML5</span> <span class="tech-pill">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://www.certificationsbuzz.com" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- #21: Salman Developers (Live Site) -->
+                    <!-- #20: Salman Developers (Live Site) -->
                     <div class="col-xl-4 col-md-6 item web">
                         <div class="project-masonry-card wow fadeInUp delay-0-6s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">Real Estate &amp; Development</span>
-                                <span class="proj-num">#21</span>
+                                <span class="proj-num">#20</span>
                             </div>
                             <div class="project-card-media project-single-thumb">
                                 <a href="https://salmandevelopers.com" target="_blank" rel="noopener noreferrer">
@@ -1028,12 +1050,12 @@
                         </div>
                     </div>
 
-                    <!-- #22: Equine Listings (Live Site) -->
+                    <!-- #21: Equine Listings (Live Site) -->
                     <div class="col-xl-4 col-md-6 item web">
                         <div class="project-masonry-card wow fadeInUp delay-0-2s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">Classifieds Marketplace</span>
-                                <span class="proj-num">#22</span>
+                                <span class="proj-num">#21</span>
                             </div>
                             <div class="project-card-media project-single-thumb">
                                 <a href="https://equinelistings.com" target="_blank" rel="noopener noreferrer">
@@ -1055,12 +1077,12 @@
                         </div>
                     </div>
 
-                    <!-- #23: BrainBizz (Live Site) -->
+                    <!-- #22: BrainBizz (Live Site) -->
                     <div class="col-xl-4 col-md-6 item web">
                         <div class="project-masonry-card wow fadeInUp delay-0-4s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">Digital Agency Portal</span>
-                                <span class="proj-num">#23</span>
+                                <span class="proj-num">#22</span>
                             </div>
                             <div class="project-card-media project-single-thumb">
                                 <a href="https://www.brainbizz.com" target="_blank" rel="noopener noreferrer">
@@ -1082,12 +1104,12 @@
                         </div>
                     </div>
 
-                    <!-- #24: TecPhantom (Live Site) -->
+                    <!-- #23: TecPhantom (Live Site) -->
                     <div class="col-xl-4 col-md-6 item web">
                         <div class="project-masonry-card wow fadeInUp delay-0-6s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">IT Consulting &amp; Cloud</span>
-                                <span class="proj-num">#24</span>
+                                <span class="proj-num">#23</span>
                             </div>
                             <div class="project-card-media project-single-thumb">
                                 <a href="https://www.tecphantom.com" target="_blank" rel="noopener noreferrer">
@@ -1109,12 +1131,12 @@
                         </div>
                     </div>
 
-                    <!-- #25: RightFixers (Live Site) -->
+                    <!-- #24: RightFixers (Live Site) -->
                     <div class="col-xl-4 col-md-6 item saas">
                         <div class="project-masonry-card wow fadeInUp delay-0-4s">
                             <div class="card-header-meta">
                                 <span class="cat-badge">Services Booking SaaS</span>
-                                <span class="proj-num">#25</span>
+                                <span class="proj-num">#24</span>
                             </div>
                             <div class="project-card-media project-single-thumb">
                                 <a href="https://www.rightfixers.com" target="_blank" rel="noopener noreferrer">
@@ -1136,270 +1158,6 @@
                         </div>
                     </div>
 
-                            </div>
-                            <div class="project-card-media project-single-thumb">
-                                <a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/projects/project1.jpg" alt="Study4Skills Platform">
-                                </a>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer">Study4Skills</a></h4>
-                                <p>Comprehensive online examination &amp; skill assessment ecosystem with timed testing, anti-cheat question banks, and student performance analytics.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">PHP</span> <span class="tech-pill">Vue.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Redis</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://www.study4skills.com/" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- #28: Cloud Lead Engine CRM (Live Site) -->
-                    <div class="col-xl-4 col-md-6 item saas">
-                        <div class="project-masonry-card wow fadeInUp delay-0-2s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">CRM &amp; Lead Engine</span>
-                                <span class="proj-num">#28</span>
-                            </div>
-                            <div class="project-card-media project-single-thumb">
-                                <a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/projects/project2.jpg" alt="Cloud Lead Engine CRM">
-                                </a>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer">Cloud Lead Engine CRM</a></h4>
-                                <p>High-velocity lead acquisition, CRM pipeline management, automated follow-up workflows, and conversion analytics platform.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">Node.js</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">REST APIs</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://cloudleadengine.com/login" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- #29: Qubits Portal (Live Site) -->
-                    <div class="col-xl-4 col-md-6 item lms">
-                        <div class="project-masonry-card wow fadeInUp delay-0-4s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">LMS &amp; Assessment Portal</span>
-                                <span class="proj-num">#29</span>
-                            </div>
-                            <div class="project-card-media project-single-thumb">
-                                <a href="https://qubitsportal.com/portal/login" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/projects/project4.jpg" alt="Qubits Portal">
-                                </a>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://qubitsportal.com/portal/login" target="_blank" rel="noopener noreferrer">Qubits Portal</a></h4>
-                                <p>Secure institutional examination and student assessment management platform with role-based access control and live reporting.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://qubitsportal.com/portal/login" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- #30: Direct Dispatcher (Live Site) -->
-                    <div class="col-xl-4 col-md-6 item saas">
-                        <div class="project-masonry-card wow fadeInUp delay-0-6s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">Logistics &amp; Dispatcher</span>
-                                <span class="proj-num">#30</span>
-                            </div>
-                            <div class="project-card-media project-single-thumb">
-                                <a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/projects/project3.jpg" alt="Direct Dispatcher">
-                                </a>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer">Direct Dispatcher</a></h4>
-                                <p>Freight logistics coordination platform with real-time route scheduling, driver management, and automated dispatch workflows.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">PHP</span> <span class="tech-pill">MySQL</span> <span class="tech-pill">Google Maps API</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://directdispatcher.com/" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- #31: OET Online Exam (Live Site) -->
-                    <div class="col-xl-4 col-md-6 item lms">
-                        <div class="project-masonry-card wow fadeInUp delay-0-2s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">Medical Test Engine</span>
-                                <span class="proj-num">#31</span>
-                            </div>
-                            <div class="project-card-media project-single-thumb">
-                                <a href="https://online.oetpro.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/projects/project5.jpg" alt="OET Online Exam">
-                                </a>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://online.oetpro.com/" target="_blank" rel="noopener noreferrer">OET Online Exam</a></h4>
-                                <p>Specialized Occupational English Test mock testing with timed sub-tests, audio integration, and automatic scoring modules.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">Audio API</span> <span class="tech-pill">MySQL</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://online.oetpro.com/" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- #32: Al-Ahad Tech (Live Site) -->
-                    <div class="col-xl-4 col-md-6 item web">
-                        <div class="project-masonry-card wow fadeInUp delay-0-4s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">IT Solutions &amp; Corporate</span>
-                                <span class="proj-num">#32</span>
-                            </div>
-                            <div class="project-card-media project-single-thumb">
-                                <a href="https://alahadtech.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/projects/project6.jpg" alt="Al-Ahad Tech">
-                                </a>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://alahadtech.com/" target="_blank" rel="noopener noreferrer">Al-Ahad Tech</a></h4>
-                                <p>Enterprise technology services showcase with service portfolios, case studies, client inquiry funnels, and modern responsive UI.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">PHP</span> <span class="tech-pill">JavaScript</span> <span class="tech-pill">HTML5</span> <span class="tech-pill">CSS3</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://alahadtech.com/" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Projects Masonry Area end -->
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-md-6 item web">
-                        <div class="project-masonry-card wow fadeInUp delay-0-4s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">On-Demand Service Platform</span>
-                                <span class="proj-num">#14</span>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://fixmycar.pk/" target="_blank" rel="noopener noreferrer">Fix My
-                                        Car</a></h4>
-                                <p>Automotive maintenance booking platform with mechanic dispatch, service package
-                                    catalogs, and customer review systems.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span
-                                        class="tech-pill">MySQL</span> <span class="tech-pill">SMS Gateway</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://fixmycar.pk/" target="_blank" rel="noopener noreferrer"
-                                    class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-md-6 item lms">
-                        <div class="project-masonry-card wow fadeInUp delay-0-6s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">IELTS Prep Engine</span>
-                                <span class="proj-num">#15</span>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://fasttrackielts.study4skills.com/" target="_blank"
-                                        rel="noopener noreferrer">Fast Track IELTS</a></h4>
-                                <p>Dedicated test preparation interface for IELTS Academic and General training with
-                                    modular practice suites and mock exams.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">Laravel</span> <span class="tech-pill">Vue.js</span> <span
-                                        class="tech-pill">MySQL</span> <span class="tech-pill">CSS3</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://fasttrackielts.study4skills.com/" target="_blank"
-                                    rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-md-6 item web">
-                        <div class="project-masonry-card wow fadeInUp delay-0-2s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">Commercial Services Web</span>
-                                <span class="proj-num">#16</span>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://carecleaners.pk/" target="_blank" rel="noopener noreferrer">Care
-                                        Cleaners</a></h4>
-                                <p>Service scheduling and customer management platform for residential and commercial
-                                    cleaning with booking calendar.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span
-                                        class="tech-pill">MySQL</span> <span class="tech-pill">Bootstrap</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://carecleaners.pk/" target="_blank" rel="noopener noreferrer"
-                                    class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-md-6 item lms">
-                        <div class="project-masonry-card wow fadeInUp delay-0-4s">
-                            <div class="card-header-meta">
-                                <span class="cat-badge">Exam Simulator</span>
-                                <span class="proj-num">#17</span>
-                            </div>
-                            <div class="card-body-content">
-                                <h4><a href="https://languagecert.study4skills.com/" target="_blank"
-                                        rel="noopener noreferrer">LanguageCert Practice</a></h4>
-                                <p>Interactive LanguageCert exam practice suite with modular question navigation, audio
-                                    listening questions, and score tracking.</p>
-                                <div class="tech-wrap mb-3">
-                                    <span class="tech-pill">PHP</span> <span class="tech-pill">Laravel</span> <span
-                                        class="tech-pill">MySQL</span> <span class="tech-pill">Audio Player</span>
-                                </div>
-                            </div>
-                            <div class="card-footer-links text-end">
-                                <a href="https://languagecert.study4skills.com/" target="_blank"
-                                    rel="noopener noreferrer" class="link-btn">
-                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="project-btn text-center mt-40 wow fadeInUp delay-0-2s">
